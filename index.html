@@ -957,10 +957,18 @@
 
         <p class="modal-section-title">Validation</p>
         <p class="modal-text">The fake-door experiment reached approximately 3,000 users and recorded a 5% click-through rate — more than double the 2–3% platform baseline. This gave us strong signal that the concept resonated with real users and was worth developing further, providing the evidence base we needed to progress through the Innovation Awards stages.</p>
+        <img src="genie01_fakedoor.png" alt="Fake door experiment" class="modal-img" />
+        <p class="modal-img-caption">Fake-door experiment results — flow analytics showing user reach and 5% completion rate</p>
 
         <p class="modal-section-title">Solution</p>
         <p class="modal-text">With validated demand, we developed CiteGenie — an AI-powered research assistant designed to streamline how tax professionals access and act on information. The concept drew directly on Wolters Kluwer's comprehensive library of trusted tax and accounting content, enabling professionals to ask real questions and receive accurate, cited answers in seconds.</p>
+        <img src="genie03_leancanvas.png" alt="CCH CiteGenie lean canvas" class="modal-img" />
+        <p class="modal-img-caption">CCH CiteGenie lean canvas — problem/solution fit, market sizing, revenue streams and key metrics</p>
         <p class="modal-text" style="margin-top: 12px;">We built out the solution using a lean canvas to stress-test all angles — problem fit, revenue potential, differentiation, and risk. I then designed a fully interactive Figma prototype covering the end-to-end user flow, which served as both a stakeholder communication tool and a developer handoff reference. The dev team built a working demo directly from this prototype.</p>
+        <img src="genie04_home.png" alt="CiteGenie home screen" class="modal-img" />
+        <p class="modal-img-caption">CiteGenie home screen — ask real questions, get in-depth answers, create actionable content</p>
+        <img src="genie05_prototype.png" alt="CiteGenie prototype screens" class="modal-img" />
+        <p class="modal-img-caption">Prototype screens showing the full CiteGenie conversation and citation flow</p>
         <p class="modal-text" style="margin-top: 12px;">Beyond the core integrated experience, we explored additional distribution opportunities — including integrations into Outlook, Microsoft Teams, and even competitor software, leveraging Wolters Kluwer's strong content position in the tax and accounting market to reach professionals wherever they already work.</p>
 
         <p class="modal-section-title">Impact</p>
@@ -1006,15 +1014,31 @@
 
         <p class="modal-section-title">Background</p>
         <p class="modal-text">Wolters Kluwer is a global leader in professional information and software, operating across numerous distinct market segments with a product portfolio significantly expanded through decades of strategic acquisitions. This history created a fragmented landscape — disparate user experiences, inconsistent brand representation, and no shared design language across dozens of products.</p>
+        <img src="ds_01.png" alt="Design system v2 and v3 patterns" class="modal-img" />
+        <p class="modal-img-caption">Design system v2 & v3-alpha — Patterns and Design library cover in Figma</p>
         <p class="modal-text" style="margin-top: 12px;">The initiative to establish the organisation's first-ever comprehensive design system was a direct response to this fragmentation — a fundamental effort to unify products under a cohesive visual language and interaction framework at global scale.</p>
+        <img src="ds_08.png" alt="Products built with design system" class="modal-img" />
+        <p class="modal-img-caption">Products built on the design system — tax, legal and compliance tools across multiple regions and languages</p>
 
         <p class="modal-section-title">Problem</p>
         <p class="modal-text">With no shared design system in place, every team was solving the same problems independently — creating redundant work, inconsistent experiences for users, and a growing gap between design and development. Achieving consistency across 20+ teams and a diverse product portfolio required more than a component library. It required a strategic foundation, a shared language, and a system that could flex across genuinely different product types.</p>
 
         <p class="modal-section-title">Process</p>
         <p class="modal-text">We began with a comprehensive audit of existing Wolters Kluwer applications — meticulously documenting patterns, components, and pages across the portfolio to identify commonalities and inconsistencies. A key early finding was the distinction between two fundamental product types: <strong style="color: var(--ink); font-weight: 500;">Research</strong> products (horizontal fixed navigation) and <strong style="color: var(--ink); font-weight: 500;">Workflow</strong> products (expandable left-hand fluid navigation). This distinction became the structural backbone of the system's component architecture.</p>
+        <img src="ds_04_chromefixed.png" alt="Chrome fixed navigation" class="modal-img" />
+        <p class="modal-img-caption">Chrome Fixed — horizontal top navigation pattern for research-type products</p>
+        <img src="ds_03_chromefluid.png" alt="Chrome fluid navigation" class="modal-img" />
+        <p class="modal-img-caption">Chrome Fluid — expandable left-hand navigation pattern for workflow-type products</p>
         <p class="modal-text" style="margin-top: 12px;">Through extensive cross-functional global workshops, we defined scope, established priorities, and navigated existing brand guidelines for icons, colours, and typography. Components were then designed and developed in agile sprint cycles — launching Version 1, iterating to Version 2, and progressing toward Version 3. Our toolchain evolved alongside the system, transitioning from Sketch to Figma for design, and from Storybook to ZeroHeight for documentation, with all platforms linked and synchronised.</p>
+        <img src="ds_02.png" alt="Storybook component library" class="modal-img" />
+        <p class="modal-img-caption">Storybook component documentation — components with V3 readiness status tracked across the library</p>
+        <img src="ds_05.png" alt="Figma component libraries" class="modal-img" />
+        <p class="modal-img-caption">Figma asset libraries — Components, Fundamentals and Patterns libraries available across teams</p>
+        <img src="ds_06.png" alt="ZeroHeight documentation" class="modal-img" />
+        <p class="modal-img-caption">ZeroHeight documentation site — the Product Design System introduction, vision and methodology</p>
         <p class="modal-text" style="margin-top: 12px;">Throughout, I worked across both the design system team and live product teams simultaneously — a deliberate approach that ensured components were stress-tested in real workflows rather than theoretical ones. This meant catching edge cases, interaction conflicts, and visual inconsistencies that would only surface when components were used together at scale.</p>
+        <img src="ds_07.png" alt="Design system fundamentals" class="modal-img" />
+        <p class="modal-img-caption">Design system fundamentals — buttons, typography, iconography and colour tokens</p>
 
         <p class="modal-section-title">Impact</p>
         <p class="modal-text">The design system is now an indispensable tool across the organisation. Designers access and integrate components directly in Figma; developers implement the corresponding React and Angular code. This has dramatically accelerated design and development workflows across 20+ teams globally, freeing time previously spent on redundant component work to be redirected toward meaningful, user-centric problem solving.</p>
@@ -1063,12 +1087,29 @@
 
         <p class="modal-section-title">Research</p>
         <p class="modal-text">First order of business was understanding the real pain points — not assumptions. In early 2020, with COVID having just hit and an 8-hour time difference between me (based in the Netherlands) and our APAC customers, we had to conduct all research remotely. By combining efforts across product, editorial, and commercial teams, we recruited and interviewed 10+ customers across Australia and New Zealand — including IntelliConnect users and those who had already moved to iKnow or Pinpoint.</p>
+        <img src="migrate_02.png" alt="Dovetail NPS and feedback board" class="modal-img" />
+        <p class="modal-img-caption">Dovetail feedback board — NPS scores, compliments, suggestions, questions and complaints captured from the beta</p>
         <p class="modal-text" style="margin-top: 12px;">I created the research plan and scripts, analysed all interviews, and ran the contextual inquiry process — synthesising findings into an affinity wall that anchored every subsequent design decision. The research focused on two core user pathways: search and browse. Both emerged clearly as the most critical pain points to solve.</p>
+        <img src="migrate_04.gif" alt="Dovetail research taxonomy" class="modal-img" />
+        <p class="modal-img-caption">Dovetail research taxonomy — a searchable, tagged repository of all customer insights, filterable by role, org size, region, sentiment and more</p>
         <p class="modal-text" style="margin-top: 12px;">Following this, I organised a full-day workshop to walk the wall, brainstorm design directions, and validate early concepts. We then returned to customers for moderated online interviews and unmoderated usability testing via Maze — using a high-fidelity Figma prototype to measure where the new design was more or less efficient than the old.</p>
+        <img src="migrate_06.png" alt="Browse usability testing report" class="modal-img" />
+        <p class="modal-img-caption">Browse and search usability testing — 29-slide Maze report comparing iKnow vs Pinpoint across all key tasks</p>
         <p class="modal-text" style="margin-top: 12px;">In parallel, I built a living research taxonomy in Dovetail — a searchable, tagged repository of every customer insight across all research efforts, NPS scores, support emails, surveys, and satisfaction data. Any stakeholder could query it by user role, organisation size, region, sentiment, and more. It's still being actively added to today.</p>
+        <img src="migrate_07.gif" alt="Browse and search insights canvas" class="modal-img" />
+        <p class="modal-img-caption">Browse and search insights canvas — synthesising hundreds of data points into themed job-to-be-done clusters</p>
+
+        <p class="modal-section-title">Design</p>
+        <p class="modal-text">With research synthesis complete, I moved into designing the new platform end-to-end — from information architecture and navigation through to every core pattern and template. The Figma project alone spanned MVP, MMP, and MDP phases, with pattern pages covering every surface from search and browse to onboarding, history, favourites, and migration flows.</p>
+        <img src="migrate_01.jpg" alt="Figma project structure" class="modal-img" />
+        <p class="modal-img-caption">Figma project — MVP through MDP phases, covering every pattern page across the full iKnowConnect product</p>
+        <img src="migrate_08.png" alt="iKnowConnect beta home screen" class="modal-img" />
+        <p class="modal-img-caption">CCH iKnowConnect beta — the redesigned platform on desktop and tablet, showing the new home experience</p>
 
         <p class="modal-section-title">Migration Strategy</p>
         <p class="modal-text">The biggest business risk wasn't the product itself — it was the transition. How do you move 50,000 users off a platform many had used for over a decade, without overwhelming customer success teams or triggering churn? The answer was a product-led transition — where most of the migration effort happened from within the products themselves, not through external comms or sales calls.</p>
+        <img src="migrate_03.jpg" alt="Figma prototype flows" class="modal-img" />
+        <p class="modal-img-caption">Full interactive prototype — all screens and flows connected across user journeys for developer handoff and stakeholder review</p>
         <p class="modal-text" style="margin-top: 12px;">We designed a four-phase rollout:</p>
         <ul style="margin-top: 12px; padding-left: 20px; display: flex; flex-direction: column; gap: 10px;">
           <li class="modal-text"><strong style="color: var(--ink); font-weight: 500;">Early Bird Beta</strong> — invite-only for high-value customers, giving us controlled feedback before broader release</li>
