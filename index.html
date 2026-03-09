@@ -770,7 +770,7 @@
           <p>Senior Product Designer with 10+ years' experience shaping complex SaaS and enterprise products. I specialise in research-led, end-to-end design for workflow-driven professional tools, turning ambiguity into clarity and translating user complexity into measurable outcomes.</p>
           <p>I've spent most of my career designing for professionals in regulated industries, including tax, legal, compliance and health, where accuracy, trust and efficiency are must-haves. I'm deeply collaborative and genuinely invested in elevating design maturity wherever I work.</p>
         </div>
-        <a href="/cdn-cgi/l/email-protection#a3cecccdcad2d6c68dd4cac9cdcac2e3c4cec2cacf8dc0ccce" class="btn-primary">Get in touch</a>
+        <a href="#" class="btn-primary" id="email-btn-1">Get in touch</a>
       </div>
       <div class="about-right reveal">
         <div class="strengths">
@@ -814,7 +814,7 @@
       <h2 class="section-title">Let's work together</h2>
       <p class="section-subtitle">Based in Sydney and open to senior product design roles, hybrid or remote. If you're working on something complex and meaningful, I'd love to hear about it.</p>
       <div class="contact-links">
-        <a href="/cdn-cgi/l/email-protection#ea878584839b9f8fc49d838084838baa8d878b8386c4898587" class="btn-primary"><span class="__cf_email__" data-cfemail="d8b5b7b6b1a9adbdf6afb1b2b6b1b998bfb5b9b1b4f6bbb7b5">[email&#160;protected]</span></a>
+        <a href="#" class="btn-primary" id="email-btn-2">monique.wijnia@gmail.com</a>
         <a href="https://www.linkedin.com/in/monique-wijnia-746749ab/" target="_blank" class="btn-secondary">LinkedIn ↗</a>
       </div>
     </div>
@@ -1221,6 +1221,17 @@
       });
     });
 
+
+    // Email links — assembled in JS to prevent Cloudflare obfuscation
+    (function() {
+      var u = 'monique.wijnia';
+      var d = 'gmail.com';
+      var mailto = 'mailto:' + u + '@' + d;
+      var btn1 = document.getElementById('email-btn-1');
+      var btn2 = document.getElementById('email-btn-2');
+      if (btn1) btn1.href = mailto;
+      if (btn2) { btn2.href = mailto; btn2.textContent = u + '@' + d; }
+    })();
   </script>
 </body>
 </html>
