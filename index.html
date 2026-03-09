@@ -537,6 +537,34 @@
       line-height: 1.8;
     }
     .modal-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+    .modal-image-full {
+      margin: 24px 0;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--sand);
+    }
+    .modal-image-full img { width: 100%; display: block; }
+    .modal-image-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 24px 0;
+    }
+    .modal-image-item {
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--sand);
+    }
+    .modal-image-item img { width: 100%; display: block; }
+    .modal-image-caption {
+      font-size: 0.75rem;
+      color: var(--ink-60);
+      font-weight: 300;
+      padding: 10px 14px;
+      background: var(--warm-white);
+      line-height: 1.4;
+    }
+    @media (max-width: 600px) { .modal-image-grid { grid-template-columns: 1fr; } }
     .modal-outcome {
       background: var(--warm-white);
       border: 1px solid var(--sand);
@@ -557,7 +585,7 @@
       color: var(--ink-60);
       font-weight: 300;
     }
-    .outcomes-grid {
+
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
       gap: 12px;
@@ -611,7 +639,7 @@
       <p class="hero-eyebrow">Sr. Product Designer · Sydney</p>
       <h1 class="hero-name">Designing for <em>complexity,</em> with clarity.</h1>
       <p class="hero-desc">
-        Hi, I'm Mon 👋 a Senior Product Designer with 10+ years experience leading end-to-end design for complex enterprise and SaaS products. I specialise in research-led design for professional software in tax, legal, compliance and health — the kind where understanding the user's world deeply is the only way to get it right. I enjoy solving difficult problems, work well with ambiguity, and care about getting the details right.
+        Hi, I'm Mon 👋 a Senior Product Designer with 10+ years leading end-to-end design for complex enterprise and SaaS products. I specialise in research-led design for professional software in tax, legal, compliance and health — the kind where understanding the user's world deeply is the only way to get it right. I enjoy solving difficult problems, work well with ambiguity, and care about getting the details right.
       </p>
       <div class="hero-actions">
         <a href="#work" class="btn-primary">View my work</a>
@@ -792,7 +820,7 @@
       <h2 class="section-title">Let's work together</h2>
       <p class="section-subtitle">I'm currently open to senior product design roles in Sydney or remote. If you're working on something complex and meaningful, I'd love to hear about it.</p>
       <div class="contact-links">
-        <a href="/cdn-cgi/l/email-protection#731e1c1d1a0206165d041a191d1a1233141e121a1f5d101c1e" class="btn-primary"><span class="__cf_email__" data-cfemail="731e1c1d1a0206165d041a191d1a1233141e121a1f5d101c1e">monique.wijnia@gmail.com</span></a>
+        <a href="/cdn-cgi/l/email-protection#731e1c1d1a0206165d041a191d1a1233141e121a1f5d101c1e" class="btn-primary"><span class="__cf_email__" data-cfemail="731e1c1d1a0206165d041a191d1a1233141e121a1f5d101c1e">[email&#160;protected]</span></a>
         <a href="https://www.linkedin.com/in/monique-wijnia-746749ab/" target="_blank" class="btn-secondary">LinkedIn ↗</a>
       </div>
     </div>
@@ -829,6 +857,11 @@
         <p class="modal-section-title">Background</p>
         <p class="modal-text">CCH iFirm is a professional accounting platform used daily by tax and accounting professionals across Australia. Despite its critical role in their work, the product had accumulated years of technical and design debt — its interface had barely evolved while user expectations and workflow complexity had grown significantly. A design system refresh was underway, but the deeper problem was structural: the product wasn't built around how accountants actually work.</p>
 
+        <div class="modal-image-full">
+          <img src="ifirm_03_before.png" alt="CCH iFirm legacy product screenshots" />
+          <p class="modal-image-caption">The existing product — years of accumulated design debt across disconnected modules</p>
+        </div>
+
         <p class="modal-section-title">Problem</p>
         <p class="modal-text">Accountants are under constant time pressure, yet the software was actively slowing them down. Rather than enabling efficient, proactive work, it forced users into reactive, manual patterns:</p>
         <ul style="margin-top: 12px; padding-left: 20px; display: flex; flex-direction: column; gap: 10px;">
@@ -841,8 +874,48 @@
 
         <p class="modal-section-title">Process</p>
         <p class="modal-text">I began with a thorough audit of the existing product — systematically documenting inconsistencies, friction points, and usability failures. This gave us a clear-eyed view of the current state before any design work began.</p>
+
+        <div class="modal-image-grid">
+          <div class="modal-image-item">
+            <img src="ifirm_02_audit.png" alt="UX audit findings" />
+            <p class="modal-image-caption">UX audit findings — every friction point documented before design began</p>
+          </div>
+          <div class="modal-image-item">
+            <img src="ifirm_01_stronger.jpg" alt="How we can make iFirm stronger" />
+            <p class="modal-image-caption">Competitive analysis — identifying gaps across marketing, product and content</p>
+          </div>
+        </div>
+
         <p class="modal-text" style="margin-top: 12px;">The most critical insight from this audit was that the product's structure didn't reflect how accountants actually work. Before designing anything, we needed to map their real workflow. Over several weeks in Miro, I worked closely with the VP of UX to build a comprehensive, highly detailed journey map covering every step an accountant takes from day to day. This became the single most important artifact of the project — the foundation every subsequent design decision was built on.</p>
-        <p class="modal-text" style="margin-top: 12px;">With the journey map established, I moved into defining the navigational framework — ensuring the product's structure mirrored the natural flow of an accountant's work rather than forcing them to adapt to the software. I explored multiple structural approaches, conducted desk research across professional SaaS products, and iterated in Figma using our existing design system before making the deliberate decision to push beyond it and define a future-state vision for the product and its design language.</p>
+
+        <div class="modal-image-full">
+          <img src="ifirm_05_journeymap.jpg" alt="Accountant journey map" />
+          <p class="modal-image-caption">The journey map — every step an accountant takes, mapped across stages, phases and data layers</p>
+        </div>
+
+        <p class="modal-text" style="margin-top: 12px;">With the journey map established, I moved into defining the navigational framework — ensuring the product's structure mirrored the natural flow of an accountant's work. I explored multiple structural approaches and conducted desk research across professional SaaS products before making the deliberate decision to push beyond the existing design system and define a future-state vision.</p>
+
+        <div class="modal-image-grid">
+          <div class="modal-image-item">
+            <img src="ifirm_08_competitors.png" alt="Competitor research" />
+            <p class="modal-image-caption">Desk research — benchmarking navigation patterns across professional SaaS products</p>
+          </div>
+          <div class="modal-image-item">
+            <img src="ifirm_04_vision.png" alt="Vision statement" />
+            <p class="modal-image-caption">Establishing a north star vision for CCH iFirm before designing anything</p>
+          </div>
+        </div>
+
+        <div class="modal-image-grid">
+          <div class="modal-image-item">
+            <img src="ifirm_06_singleui.jpg" alt="Single user interface concept" />
+            <p class="modal-image-caption">The structural vision — one unified interface across account management, ingestion, accounting and advising</p>
+          </div>
+          <div class="modal-image-item">
+            <img src="ifirm_07_navframework.png" alt="Navigation framework" />
+            <p class="modal-image-caption">Navigation framework — colour-coded spine mapping the accountant workflow</p>
+          </div>
+        </div>
 
         <p class="modal-section-title">Solution</p>
         <p class="modal-text">The final deliverable was a fully interactive Figma prototype representing a complete reimagining of CCH iFirm — built around the accountant's natural workflow rather than legacy product structure. It covered:</p>
@@ -852,6 +925,32 @@
           <li class="modal-text"><strong style="color: var(--ink); font-weight: 500;">Logic flows for all core patterns</strong> — onboarding, account management, help, e-commerce, and trial-to-subscribe — each grounded in the journey map</li>
           <li class="modal-text"><strong style="color: var(--ink); font-weight: 500;">A future-state design vision</strong> that went beyond the existing component library to establish what the product — and its design system — could become</li>
         </ul>
+
+        <div class="modal-image-full">
+          <img src="ifirm_11_desired.jpg" alt="Desired experience" />
+          <p class="modal-image-caption">The desired experience — end-to-end accounting work in one efficient, connected workflow</p>
+        </div>
+
+        <div class="modal-image-grid">
+          <div class="modal-image-item">
+            <img src="ifirm_09_dashboard_annotated.png" alt="Dashboard with annotations" />
+            <p class="modal-image-caption">Dashboard design — annotated to show the navigation logic and click-through patterns</p>
+          </div>
+          <div class="modal-image-item">
+            <img src="ifirm_10_dashboard_clean.png" alt="Final dashboard UI" />
+            <p class="modal-image-caption">Final dashboard UI — proactive, workflow-driven and built on the global design system</p>
+          </div>
+        </div>
+
+        <div class="modal-image-full">
+          <img src="ifirm_12_logicflows.png" alt="Logic flows" />
+          <p class="modal-image-caption">Logic flows — every core pattern covered, from suite settings and new users to e-store and trial-to-subscribe</p>
+        </div>
+
+        <div class="modal-image-full">
+          <img src="ifirm_14_prototype_dark.png" alt="Figma prototype map" />
+          <p class="modal-image-caption">The full Figma prototype — all screens and connections mapped across every user journey</p>
+        </div>
 
         <p class="modal-section-title">Impact</p>
         <p class="modal-text">The outcome of this project wasn't a shipped product — it was organisational alignment. The presentation to product and strategy leadership was met with strong endorsement, directly resulting in the formation of a dedicated Global Platform Team. I was appointed as the lead designer for this team, tasked with building the vision for Wolters Kluwer's next generation of global accounting software. The concepts developed in this project became the foundational backbone for that initiative.</p>
@@ -1050,7 +1149,7 @@
     </div>
   </div>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script>
     // Scroll reveal
     const reveals = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver((entries) => {
@@ -1073,4 +1172,18 @@
       document.body.style.overflow = '';
     }
     function closeModalOnOverlay(e, id) {
-      if (e.target === document.getElementById(id)) closeModal(i
+      if (e.target === document.getElementById(id)) closeModal(id);
+    }
+
+    // Close on escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.modal-overlay.open').forEach(m => {
+          m.classList.remove('open');
+          document.body.style.overflow = '';
+        });
+      }
+    });
+  </script>
+</body>
+</html>
