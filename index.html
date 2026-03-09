@@ -686,7 +686,7 @@
     <div class="case-studies">
 
       <!-- Case 1 -->
-      <div class="case-card reveal" onclick="openModal('modal-1')" style="cursor:pointer;">
+      <div class="case-card reveal" data-modal="modal-1" style="cursor:pointer;">
         <div class="case-image">
           <img src="mockup_dual_monitors.png" alt="CCH iFirm accounting software redesign" />
         </div>
@@ -704,7 +704,7 @@
       </div>
 
       <!-- Case 2 -->
-      <div class="case-card reverse reveal" onclick="openModal('modal-2')" style="cursor:pointer;">
+      <div class="case-card reverse reveal" data-modal="modal-2" style="cursor:pointer;">
         <div class="case-image">
           <img src="mockup_citegenie.png" alt="CCH CiteGenie AI tax research assistant" />
         </div>
@@ -722,7 +722,7 @@
       </div>
 
       <!-- Case 3 -->
-      <div class="case-card reveal" onclick="openModal('modal-3')" style="cursor:pointer;">
+      <div class="case-card reveal" data-modal="modal-3" style="cursor:pointer;">
         <div class="case-image">
           <img src="mockup_design_system.png" alt="Wolters Kluwer global design system" />
         </div>
@@ -740,7 +740,7 @@
       </div>
 
       <!-- Case 4 -->
-      <div class="case-card reverse reveal" onclick="openModal('modal-4')" style="cursor:pointer;">
+      <div class="case-card reverse reveal" data-modal="modal-4" style="cursor:pointer;">
         <div class="case-image">
           <img src="mockup_iknowconnect.png" alt="CCH iKnowConnect research platform" />
         </div>
@@ -829,9 +829,9 @@
   <!-- MODALS -->
 
   <!-- Modal 1: CCH iFirm -->
-  <div class="modal-overlay" id="modal-1" onclick="closeModalOnOverlay(event, 'modal-1')">
+  <div class="modal-overlay" id="modal-1" >
     <div class="modal">
-      <button class="modal-close" onclick="closeModal('modal-1')">✕</button>
+      <button class="modal-close" data-modal="modal-1">✕</button>
       <div class="modal-hero">
         <img src="mockup_dual_monitors.png" alt="CCH iFirm" />
       </div>
@@ -932,9 +932,9 @@
   </div>
 
   <!-- Modal 2: AI Tax Agents -->
-  <div class="modal-overlay" id="modal-2" onclick="closeModalOnOverlay(event, 'modal-2')">
+  <div class="modal-overlay" id="modal-2" >
     <div class="modal">
-      <button class="modal-close" onclick="closeModal('modal-2')">✕</button>
+      <button class="modal-close" data-modal="modal-2">✕</button>
       <div class="modal-hero">
         <img src="mockup_citegenie.png" alt="CCH CiteGenie" />
       </div>
@@ -1008,9 +1008,9 @@
   </div>
 
   <!-- Modal 3: Design System -->
-  <div class="modal-overlay" id="modal-3" onclick="closeModalOnOverlay(event, 'modal-3')">
+  <div class="modal-overlay" id="modal-3" >
     <div class="modal">
-      <button class="modal-close" onclick="closeModal('modal-3')">✕</button>
+      <button class="modal-close" data-modal="modal-3">✕</button>
       <div class="modal-hero">
         <img src="mockup_design_system.png" alt="Wolters Kluwer design system" />
       </div>
@@ -1083,9 +1083,9 @@
   </div>
 
   <!-- Modal 4: Research Platform -->
-  <div class="modal-overlay" id="modal-4" onclick="closeModalOnOverlay(event, 'modal-4')">
+  <div class="modal-overlay" id="modal-4" >
     <div class="modal">
-      <button class="modal-close" onclick="closeModal('modal-4')">✕</button>
+      <button class="modal-close" data-modal="modal-4">✕</button>
       <div class="modal-hero">
         <img src="mockup_iknowconnect.png" alt="CCH iKnowConnect" />
       </div>
@@ -1188,4 +1188,32 @@
     }
 
     // Close on escape key
-    document.addEventListener('keydown'
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.modal-overlay.open').forEach(m => {
+          m.classList.remove('open');
+          document.body.style.overflow = '';
+        });
+      }
+    });
+
+    // Wire up cards to open modals via event listeners (resilient to Cloudflare script injection)
+    document.querySelectorAll('.case-card[data-modal]').forEach(card => {
+      card.addEventListener('click', () => openModal(card.dataset.modal));
+    });
+
+    // Wire up close buttons
+    document.querySelectorAll('.modal-close').forEach(btn => {
+      btn.addEventListener('click', () => closeModal(btn.dataset.modal));
+    });
+
+    // Wire up overlay click to close
+    document.querySelectorAll('.modal-overlay').forEach(overlay => {
+      overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) closeModal(overlay.id);
+      });
+    });
+
+  </script>
+</body>
+</html>
