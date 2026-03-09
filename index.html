@@ -528,34 +528,27 @@
       line-height: 1.8;
     }
     .modal-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
-    .modal-image-full {
-      margin: 24px 0;
-      border-radius: 12px;
-      overflow: hidden;
-      border: 1px solid var(--sand);
-    }
-    .modal-image-full img { width: 100%; display: block; }
-    .modal-image-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-      margin: 24px 0;
-    }
-    .modal-image-item {
-      border-radius: 12px;
-      overflow: hidden;
-      border: 1px solid var(--sand);
-    }
-    .modal-image-item img { width: 100%; display: block; }
-    .modal-image-caption {
-      font-size: 0.75rem;
-      color: var(--ink-60);
-      font-weight: 300;
-      padding: 10px 14px;
-      background: var(--warm-white);
-      line-height: 1.4;
-    }
     @media (max-width: 600px) { .modal-image-grid { grid-template-columns: 1fr; } }
+    .modal-img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 16px;
+      margin-bottom: 8px;
+      display: block;
+      border: 1px solid var(--sand);
+    }
+    .modal-img-caption {
+      font-size: 0.78rem;
+      color: var(--ink-30);
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+    .outcomes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+      margin-top: 10px;
+    }
     .modal-outcome {
       background: var(--warm-white);
       border: 1px solid var(--sand);
@@ -847,13 +840,12 @@
 
         <p class="modal-section-title">Background</p>
         <p class="modal-text">CCH iFirm is a professional accounting platform used daily by tax and accounting professionals across Australia. Despite its critical role in their work, the product had accumulated years of technical and design debt — its interface had barely evolved while user expectations and workflow complexity had grown significantly. A design system refresh was underway, but the deeper problem was structural: the product wasn't built around how accountants actually work.</p>
+        <img src="ifirm01_makingitstrongerjpg.jpg" alt="How we can make CCH iFirm stronger" class="modal-img" />
+        <p class="modal-img-caption">Strategic gap analysis — marketing, product and content opportunities identified in the audit</p>
+        <img src="ifirm02_visionaudit.png" alt="Vision and audit findings" class="modal-img" />
+        <p class="modal-img-caption">UX audit findings — usability and structural issues documented before any design work began</p>
 
-        <div class="modal-image-full">
-          <img src="ifirm_03_before.png" alt="CCH iFirm legacy product screenshots" />
-          <p class="modal-image-caption">The existing product — years of accumulated design debt across disconnected modules</p>
-        </div>
-
-        <p class="modal-section-title">Problem</p>
+<p class="modal-section-title">Problem</p>
         <p class="modal-text">Accountants are under constant time pressure, yet the software was actively slowing them down. Rather than enabling efficient, proactive work, it forced users into reactive, manual patterns:</p>
         <ul style="margin-top: 12px; padding-left: 20px; display: flex; flex-direction: column; gap: 10px;">
           <li class="modal-text"><strong style="color: var(--ink); font-weight: 500;">Constant context switching:</strong> Simple tasks required jumping between multiple tools and manually copying and pasting data — work the software should have been doing automatically.</li>
@@ -862,51 +854,27 @@
           <li class="modal-text"><strong style="color: var(--ink); font-weight: 500;">Fragmented strategy:</strong> Multiple regional product instances meant there was no shared vision for where the product was going — leaving the team unable to align on a path forward.</li>
         </ul>
         <p class="modal-text" style="margin-top:12px;">This combination of surface-level usability issues and deeper structural problems created a rare opportunity: rather than patching the existing product, we had the chance to step back and reimagine it from the ground up.</p>
+        <img src="ifirm03_before.png" alt="CCH iFirm legacy product" class="modal-img" />
+        <p class="modal-img-caption">The existing CCH iFirm — fragmented navigation, inconsistent UI, and no coherent workflow structure</p>
+        <img src="ifirm04_old.png" alt="Old iFirm screens" class="modal-img" />
+        <p class="modal-img-caption">Legacy screen examples showing the depth of accumulated technical and design debt</p>
 
         <p class="modal-section-title">Process</p>
         <p class="modal-text">I began with a thorough audit of the existing product — systematically documenting inconsistencies, friction points, and usability failures. This gave us a clear-eyed view of the current state before any design work began.</p>
 
-        <div class="modal-image-grid">
-          <div class="modal-image-item">
-            <img src="ifirm_02_audit.png" alt="UX audit findings" />
-            <p class="modal-image-caption">UX audit findings — every friction point documented before design began</p>
-          </div>
-          <div class="modal-image-item">
-            <img src="ifirm_01_stronger.jpg" alt="How we can make iFirm stronger" />
-            <p class="modal-image-caption">Competitive analysis — identifying gaps across marketing, product and content</p>
-          </div>
-        </div>
-
         <p class="modal-text" style="margin-top: 12px;">The most critical insight from this audit was that the product's structure didn't reflect how accountants actually work. Before designing anything, we needed to map their real workflow. Over several weeks in Miro, I worked closely with the VP of UX to build a comprehensive, highly detailed journey map covering every step an accountant takes from day to day. This became the single most important artifact of the project — the foundation every subsequent design decision was built on.</p>
-
-        <div class="modal-image-full">
-          <img src="ifirm_05_journeymap.jpg" alt="Accountant journey map" />
-          <p class="modal-image-caption">The journey map — every step an accountant takes, mapped across stages, phases and data layers</p>
-        </div>
+        <img src="ifirm05_journeymap.png" alt="Accountant journey map" class="modal-img" />
+        <p class="modal-img-caption">The comprehensive accountant journey map — built in Miro over several weeks, covering every stage of the accounting workflow</p>
 
         <p class="modal-text" style="margin-top: 12px;">With the journey map established, I moved into defining the navigational framework — ensuring the product's structure mirrored the natural flow of an accountant's work. I explored multiple structural approaches and conducted desk research across professional SaaS products before making the deliberate decision to push beyond the existing design system and define a future-state vision.</p>
-
-        <div class="modal-image-grid">
-          <div class="modal-image-item">
-            <img src="ifirm_08_competitors.png" alt="Competitor research" />
-            <p class="modal-image-caption">Desk research — benchmarking navigation patterns across professional SaaS products</p>
-          </div>
-          <div class="modal-image-item">
-            <img src="ifirm_04_vision.png" alt="Vision statement" />
-            <p class="modal-image-caption">Establishing a north star vision for CCH iFirm before designing anything</p>
-          </div>
-        </div>
-
-        <div class="modal-image-grid">
-          <div class="modal-image-item">
-            <img src="ifirm_06_singleui.jpg" alt="Single user interface concept" />
-            <p class="modal-image-caption">The structural vision — one unified interface across account management, ingestion, accounting and advising</p>
-          </div>
-          <div class="modal-image-item">
-            <img src="ifirm_07_navframework.png" alt="Navigation framework" />
-            <p class="modal-image-caption">Navigation framework — colour-coded spine mapping the accountant workflow</p>
-          </div>
-        </div>
+        <img src="ifirm06_singleui.jpg" alt="Single user interface concept" class="modal-img" />
+        <p class="modal-img-caption">The single unified interface concept — four workflow areas connected by a common data layer</p>
+        <img src="ifirm07_navframework.jpg" alt="Navigation framework V4" class="modal-img" />
+        <p class="modal-img-caption">Navigational framework V4 — the structural layout underpinning the redesigned product</p>
+        <img src="ifirm08_competitors.png" alt="Competitor research" class="modal-img" />
+        <p class="modal-img-caption">Competitor and industry research — benchmarking professional SaaS products to inform navigation and layout decisions</p>
+        <img src="ifirm09_navigationexamples.png" alt="Navigation examples" class="modal-img" />
+        <p class="modal-img-caption">Navigation pattern exploration across professional workflow tools</p>
 
         <p class="modal-section-title">Solution</p>
         <p class="modal-text">The final deliverable was a fully interactive Figma prototype representing a complete reimagining of CCH iFirm — built around the accountant's natural workflow rather than legacy product structure. It covered:</p>
@@ -916,32 +884,22 @@
           <li class="modal-text"><strong style="color: var(--ink); font-weight: 500;">Logic flows for all core patterns</strong> — onboarding, account management, help, e-commerce, and trial-to-subscribe — each grounded in the journey map</li>
           <li class="modal-text"><strong style="color: var(--ink); font-weight: 500;">A future-state design vision</strong> that went beyond the existing component library to establish what the product — and its design system — could become</li>
         </ul>
+        <img src="ifirm11_dashboard_annotated.png" alt="Dashboard with design annotations" class="modal-img" />
+        <p class="modal-img-caption">Annotated dashboard design — showing the navigation framework and workflow logic in context</p>
+        <img src="ifirm12_dashboard_clean.png" alt="Final dashboard UI" class="modal-img" />
+        <p class="modal-img-caption">Final dashboard UI — a proactive, data-rich view of the accountant's workday</p>
+        <img src="ifirm13_logicflows.png" alt="Logic flows" class="modal-img" />
+        <p class="modal-img-caption">Logic flows covering all core patterns — suite settings, new users, product management, e-store and more</p>
+        <img src="ifirm14_desiredexperience.jpg" alt="Desired experience" class="modal-img" />
+        <p class="modal-img-caption">The desired experience — end-to-end accounting work in one efficient, unified workflow</p>
+        <img src="ifirm14_figma_structure.png" alt="Figma prototype structure" class="modal-img" />
+        <p class="modal-img-caption">Full Figma prototype structure — all logic flows mapped and connected</p>
+        <img src="ifirm15_prototype_layout.png" alt="Prototype layout overview" class="modal-img" />
+        <p class="modal-img-caption">Prototype layout overview — the complete scope of the interactive prototype</p>
+        <img src="ifirm16_prototype_dark.png" alt="Prototype dark mode view" class="modal-img" />
+        <p class="modal-img-caption">Prototype overview in Figma — showing the full breadth of screens and connections delivered</p>
 
-        <div class="modal-image-full">
-          <img src="ifirm_11_desired.jpg" alt="Desired experience" />
-          <p class="modal-image-caption">The desired experience — end-to-end accounting work in one efficient, connected workflow</p>
-        </div>
 
-        <div class="modal-image-grid">
-          <div class="modal-image-item">
-            <img src="ifirm_09_dashboard_annotated.png" alt="Dashboard with annotations" />
-            <p class="modal-image-caption">Dashboard design — annotated to show the navigation logic and click-through patterns</p>
-          </div>
-          <div class="modal-image-item">
-            <img src="ifirm_10_dashboard_clean.png" alt="Final dashboard UI" />
-            <p class="modal-image-caption">Final dashboard UI — proactive, workflow-driven and built on the global design system</p>
-          </div>
-        </div>
-
-        <div class="modal-image-full">
-          <img src="ifirm_12_logicflows.png" alt="Logic flows" />
-          <p class="modal-image-caption">Logic flows — every core pattern covered, from suite settings and new users to e-store and trial-to-subscribe</p>
-        </div>
-
-        <div class="modal-image-full">
-          <img src="ifirm_14_prototype_dark.png" alt="Figma prototype map" />
-          <p class="modal-image-caption">The full Figma prototype — all screens and connections mapped across every user journey</p>
-        </div>
 
         <p class="modal-section-title">Impact</p>
         <p class="modal-text">The outcome of this project wasn't a shipped product — it was organisational alignment. The presentation to product and strategy leadership was met with strong endorsement, directly resulting in the formation of a dedicated Global Platform Team. I was appointed as the lead designer for this team, tasked with building the vision for Wolters Kluwer's next generation of global accounting software. The concepts developed in this project became the foundational backbone for that initiative.</p>
