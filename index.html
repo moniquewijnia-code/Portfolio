@@ -1166,7 +1166,7 @@
     </div>
   </div>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script>
     // Scroll reveal disabled — elements always visible, no observer repaints
 
     // Modal
@@ -1215,4 +1215,12 @@
       var u = 'monique.wijnia';
       var d = 'gmail.com';
       var mailto = 'mailto:' + u + '@' + d;
-      var btn1 = document.getElementById('email-btn-1
+      var btn1 = document.getElementById('email-btn-1');
+      var btn2 = document.getElementById('email-btn-2');
+      if (btn1) btn1.href = mailto;
+      if (btn2) { btn2.href = mailto; btn2.textContent = u + '@' + d; }
+    })();
+
+  </script>
+</body>
+</html>
