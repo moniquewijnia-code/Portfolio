@@ -564,7 +564,18 @@
       line-height: 1;
       margin-bottom: 4px;
     }
-    .modal-outcome-label {
+    .modal-img-pair {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 20px 0 8px;
+    }
+    .modal-img-pair .modal-img {
+      margin: 0;
+    }
+    @media (max-width: 600px) {
+      .modal-img-pair { grid-template-columns: 1fr; }
+    }
       font-size: 0.82rem;
       color: var(--ink-60);
       font-weight: 300;
@@ -1025,10 +1036,16 @@
 
         <p class="modal-section-title">Process</p>
         <p class="modal-text">We began with a comprehensive audit of existing Wolters Kluwer applications — meticulously documenting patterns, components, and pages across the portfolio to identify commonalities and inconsistencies. A key early finding was the distinction between two fundamental product types: <strong style="color: var(--ink); font-weight: 500;">Research</strong> products (horizontal fixed navigation) and <strong style="color: var(--ink); font-weight: 500;">Workflow</strong> products (expandable left-hand fluid navigation). This distinction became the structural backbone of the system's component architecture.</p>
-        <img src="ds_04_chromefixed.png" alt="Chrome fixed navigation" class="modal-img" />
-        <p class="modal-img-caption">Chrome Fixed — horizontal top navigation pattern for research-type products</p>
-        <img src="ds_03_chromefluid.png" alt="Chrome fluid navigation" class="modal-img" />
-        <p class="modal-img-caption">Chrome Fluid — expandable left-hand navigation pattern for workflow-type products</p>
+        <div class="modal-img-pair">
+          <div>
+            <img src="ds_04_chromefixed.png" alt="Chrome fixed navigation" class="modal-img" style="margin-bottom:8px;" />
+            <p class="modal-img-caption">Chrome Fixed — horizontal top navigation for research-type products</p>
+          </div>
+          <div>
+            <img src="ds_03_chromefluid.png" alt="Chrome fluid navigation" class="modal-img" style="margin-bottom:8px;" />
+            <p class="modal-img-caption">Chrome Fluid — expandable left-hand navigation for workflow-type products</p>
+          </div>
+        </div>
         <p class="modal-text" style="margin-top: 12px;">Through extensive cross-functional global workshops, we defined scope, established priorities, and navigated existing brand guidelines for icons, colours, and typography. Components were then designed and developed in agile sprint cycles — launching Version 1, iterating to Version 2, and progressing toward Version 3. Our toolchain evolved alongside the system, transitioning from Sketch to Figma for design, and from Storybook to ZeroHeight for documentation, with all platforms linked and synchronised.</p>
         <img src="ds_02.png" alt="Storybook component library" class="modal-img" />
         <p class="modal-img-caption">Storybook component documentation — components with V3 readiness status tracked across the library</p>
