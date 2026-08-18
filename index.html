@@ -794,17 +794,14 @@
       <!-- Case 7 (ReadyTech) -->
       <div class="case-card reveal" onclick="openModal('modal-7')" style="cursor:pointer;">
         <div class="case-image">
-          <div class="case-image-placeholder">
-            <span class="placeholder-icon">🔄</span>
-            <span class="placeholder-text">Add your mockup image here</span>
-          </div>
+          <img src="shiftmp_hero.png" alt="Ready Workforce roster redesign, desktop dashboard" />
         </div>
         <div class="case-content">
           <p class="case-number">07 · ReadyTech</p>
-          <h3 class="case-title">Building a shift marketplace, from brief to pilot</h3>
-          <p class="case-desc">Redesigning how managers fill last-minute shift gaps and how frontline staff pick them up, from user research through a phased MVP now heading into pilot, across desktop and mobile.</p>
+          <h3 class="case-title">Redesigning rostering, from research to pilot</h3>
+          <p class="case-desc">A ground-up rethink of how managers build and fill a roster, from customer research through an AI-assisted interactive prototype to a phased MVP heading into pilot, across desktop and mobile.</p>
           <div class="case-meta">
-            <span class="case-tag">Marketplace Design</span>
+            <span class="case-tag">Roster Redesign</span>
             <span class="case-tag">Mobile &amp; Desktop</span>
             <span class="case-tag">0 to Pilot</span>
           </div>
@@ -1298,56 +1295,73 @@
     </div>
   </div>
 
-  <!-- Modal 7: Shift Marketplace -->
+  <!-- Modal 7: Roster Redesign & Shift Marketplace -->
   <div class="modal-overlay" id="modal-7" onclick="closeModalOnOverlay(event, 'modal-7')">
     <div class="modal">
       <button class="modal-close" onclick="closeModal('modal-7')">✕</button>
       <div class="modal-hero">
-        <span>🔄</span>
+        <img src="shiftmp_hero.png" alt="Ready Workforce roster redesign, desktop dashboard" />
       </div>
       <div class="modal-body">
         <p class="modal-eyebrow">ReadyTech</p>
-        <h2 class="modal-title">Building a shift marketplace, from brief to pilot</h2>
+        <h2 class="modal-title">Redesigning rostering, from research to pilot</h2>
         <div class="modal-tags">
-          <span class="tag">Marketplace Design</span>
+          <span class="tag">Roster Redesign</span>
           <span class="tag">Mobile &amp; Desktop</span>
           <span class="tag">0 to Pilot</span>
         </div>
 
         <p class="modal-section-title">Where this stands today</p>
-        <p class="modal-text">This one's still pre-pilot, so there's no shipped product screenshots yet, and some specifics are kept general while it's live work. What follows is the actual arc of the project: the research that shaped it, the two very different experiences it needed to become, and where it stands heading into pilot.</p>
+        <p class="modal-text">This one's still live work, so some specifics are kept general and a couple of the images below are from an AI-assisted interactive prototype rather than the shipped product. What follows is the real arc: the research, the redesign of the core roster experience, and the shift-filling feature that came out of it, heading into pilot.</p>
 
         <p class="modal-section-title">The situation</p>
-        <p class="modal-text">Filling a last-minute open shift is one of the most stressful, manual jobs a roster manager does. When someone calls in sick or demand spikes without warning, managers fall back on shadow IT: WhatsApp groups, SMS blasts, phone trees, whatever gets a warm body into the gap fastest. Once volunteers come back, the manager then has to manually cross-reference each one against timesheets and rosters just to guess whether saying yes will accidentally trigger overtime. It's high cognitive load, real financial risk, and it happens under time pressure. Meanwhile, on the other side of that same shift, frontline employees increasingly expect a mobile-first, gig-like way to pick up extra hours on their own terms, not a text message from a manager they might not see in time.</p>
+        <p class="modal-text">ReadyTech's roster grid is the single most-loved part of the platform and the biggest time-saver customers name, but it's also carrying real friction. Useful features exist that most people never find. Cost and overtime risk aren't visible until the pay run proves it wrong. And when a shift falls through at the last minute, managers fall back on shadow IT: a WhatsApp group, a phone tree, whatever gets a warm body into the gap fastest, then manually cross-reference every volunteer against timesheets just to guess whether saying yes will accidentally trigger overtime. Meanwhile, on the other side of that same shift, frontline employees increasingly expect a faster, gig-like way to pick up extra hours than waiting on a text they might not see in time.</p>
 
         <p class="modal-section-title">My role</p>
-        <p class="modal-text">I'm the product designer on this from brief to pilot: I led the user research that shaped the problem statement, worked with the product manager and tech lead to define the biggest issues worth solving first, designed both sides of the experience (the desktop workflow managers use to broadcast a shift, and the native mobile app employees use to claim one), mapped every notification across every fill workflow, and helped phase the MVP so we could scope something buildable instead of the whole marketplace at once.</p>
+        <p class="modal-text">I'm the product designer across the whole arc, research through pilot: I ran and synthesised the customer research, worked with product and engineering to define the problems worth solving first, designed the redesigned roster grid and a dedicated shift-filling flow across desktop and native mobile, built an AI-assisted interactive prototype to test and iterate the ideas quickly, mapped every notification the feature could send, and helped phase the delivery so nothing ships as a disruptive cutover for people who rely on this daily.</p>
 
         <p class="modal-section-title">The research</p>
-        <p class="modal-text">We started the year with research into both sides of this problem, not just the manager side that usually gets the attention. Managers and roster admins are time-poor and high-stress, anxious about blowing the labour budget but even more anxious about a shift going uncovered, so coverage wins every time it's a trade-off. Frontline employees are mobile-centric, want fair and fast access to extra hours, and are highly responsive to push notifications when the offer is clear and quick to act on. That research is where "the roster scramble" got named as the actual problem: not that managers lacked a way to broadcast a shift, but that the product gave them no faster or safer way to do it than the group chat already sitting on their phone, and zero visibility into the overtime consequences of who they picked.</p>
+        <p class="modal-text">Customer interviews on both sides of the problem, roster managers and frontline employees, settled a few things early. The base roster is loved and the biggest time-saver in the product, so this was always a re-skin and a re-layer, never a replacement. Useful capabilities already exist but go undiscovered. Cost and budget visibility is the strongest positive pull when it works, and the most frustrating when it's inconsistent, and reliability issues have already eroded enough trust that some managers keep a paper backup just in case. There's no proactive overtime warning at the point of rostering, so managers get surprised after the fact rather than warned before it happens. And appetite for a shift-bidding style feature is genuinely split: larger, cost-driven operators want it badly, smaller relationship-based teams don't want it at all, which is exactly why the manager stays in control of who gets assigned throughout, staff can express interest, but nothing auto-assigns behind their back.</p>
 
-        <div class="modal-image-placeholder">
-          <span class="placeholder-icon">🖥️📱</span>
-          <span class="placeholder-text">Add the manager broadcast flow (desktop) alongside the employee accept/decline flow (mobile) here</span>
+        <div class="modal-image-block">
+          <img src="shiftmp_roster.png" alt="Ready Workforce roster grid showing unfilled shifts and a roster alert for best-fit candidates" />
+          <p class="modal-image-caption">The redesigned roster grid in the real product: unfilled shifts flagged directly on the grid, with a roster alert linking straight into best-fit candidates ranked by interest, availability and cost.</p>
         </div>
 
-        <p class="modal-section-title">Designing two experiences at once</p>
-        <p class="modal-text">This isn't one interface, it's two, built for two completely different contexts. Managers work from the desktop roster they already live in, so the broadcast flow needed to sit naturally inside that: pick the open shift, and the system automatically filters out anyone who's ineligible against hard constraints like missing qualifications, clashing rosters, or approved leave, then ranks who's left against soft constraints managers actually weigh before offering it out, like cost and the risk of triggering immediate or cascading overtime. Employees, by contrast, needed something built for a glance and a tap: a push notification that turns into an accept or decline in as few steps as possible, because it's competing directly with the immediacy of a text message.</p>
-        <p class="modal-text" style="margin-top:12px;">For the MVP, the winning workflow is first-to-accept: whoever claims the shift first gets it, instantly. A manager-choice workflow, where employees apply and the manager picks the winner, is scoped for phase two, once managers want more control over who fills a given shift. I also designed roster-group targeting into the broadcast flow itself, so a manager filling a bar shift can send it to "Friday Night Bar Staff" instead of blasting the entire eligible list and burning trust in the notification.</p>
+        <p class="modal-section-title">Designing across desktop and mobile</p>
+        <p class="modal-text">Managers work from the desktop roster they already live in, so the shift-filling flow needed to sit naturally inside it rather than as a bolted-on separate tool: select the open shift, and the system filters out anyone ineligible against hard constraints (missing qualifications, clashing rosters, approved leave), then ranks who's left against the things a manager actually weighs before offering it out, cost, and the risk of triggering immediate or cascading overtime. Employees needed the opposite: something built for a glance and a tap on a native mobile app, a push notification that turns into an accept, apply, or decline in as few steps as possible, competing directly with the immediacy of a text message.</p>
+
+        <div class="modal-image-block">
+          <img src="shiftmp_offer.png" alt="Offer open shift modal showing eligible staff, warnings and estimated cost" />
+          <p class="modal-image-caption">Offering an open shift: eligible staff filtered against hard constraints, ranked against cost and overtime warnings, with a first-to-accept or manager-review offer method and a one-click broadcast to the whole eligible group.</p>
+        </div>
+
+        <p class="modal-section-title">Prototyping with AI</p>
+        <p class="modal-text">Rather than static comps, I built the later-stage flows as interactive, code-based prototypes using an AI-assisted prototyping workflow, grounded directly in the design system's real tokens and the actual research findings rather than built from a blank canvas. That let me test and iterate a flow in something much closer to real markup than a flat mockup, and hand engineering a working starting point rather than a set of disconnected screens.</p>
 
         <p class="modal-section-title">Mapping every notification</p>
-        <p class="modal-text">A feature like this lives or dies on trust in its notifications. If an employee gets offered a shift and never hears back, they won't open the app for the next one. So alongside the interaction design, I mapped every notification across every fill workflow: assign directly, first-to-accept, and manager review, who receives each one, when, and whether it's a push or an in-app message, down to edge cases like what a late-acceptor sees versus a silent non-responder, and what happens the moment an offer expires. That map became the shared spec design and engineering both built from.</p>
+        <p class="modal-text">A feature like this lives or dies on trust in its notifications. If an employee is offered a shift and never hears back, they won't open the app for the next one. So alongside the interaction design, I mapped every notification across every fill workflow, assign directly, first-to-accept, and manager review, who receives each one, when, and whether it's a push or an in-app message, down to edge cases like what a late acceptor sees versus a silent non-responder, and what happens the moment an offer expires.</p>
 
-        <div class="modal-image-placeholder">
-          <span class="placeholder-icon">🔔</span>
-          <span class="placeholder-text">Add the notification map here, covering assign-directly, first-to-accept, and manager-review workflows</span>
+        <div class="modal-image-block">
+          <img src="shiftmp_success.png" alt="Mobile success screen confirming a claimed shift" />
+          <p class="modal-image-caption">The moment a shift is claimed: an immediate, unambiguous confirmation on mobile, closing the loop the same way a decline, expiry, or "someone else got it" state does.</p>
         </div>
 
-        <p class="modal-section-title">Phasing the MVP</p>
-        <p class="modal-text">Rather than trying to ship the whole marketplace in one go, we phased it deliberately. The MVP covers a manager broadcasting an open shift, the automatically filtered and ranked eligible list, first-to-accept assignment, and the employee mobile app to view, accept, or decline. Phase two layers in the manager-choice workflow. Phase three opens up roster visibility and unfilled-shift management from mobile itself, plus peer-to-peer shift swapping. Just as deliberately, we scoped out anything that turns this into general chat between staff: it's a transactional tool for filling shifts, not a social network.</p>
+        <div style="display:flex; gap:16px; margin:20px 0; flex-wrap:wrap;">
+          <div style="flex:1; min-width:200px;">
+            <img src="shiftmp_ios.png" alt="iOS lock-screen push notifications for shift updates" style="width:100%; display:block; border-radius:12px; border:1px solid var(--sand);" />
+          </div>
+          <div style="flex:1; min-width:200px;">
+            <img src="shiftmp_android.png" alt="Android lock-screen push notifications for shift updates" style="width:100%; display:block; border-radius:12px; border:1px solid var(--sand);" />
+          </div>
+        </div>
+        <p class="modal-image-caption" style="margin-top:-8px;">Designed natively for both platforms: iOS (left) and Android (right) lock-screen notifications for the same shift events.</p>
+
+        <p class="modal-section-title">Phasing without breaking trust</p>
+        <p class="modal-text">Rostering is muscle memory and payroll is unforgiving, so nothing here ships as a forced cutover. Reliability issues people already distrust get fixed first, before anything new lands on top of numbers people don't believe. Lightweight in-product guidance surfaces the existing tools most people had never noticed. An insight layer, a metric strip and a needs-attention queue, lands on top of the existing grid so power users can ignore it entirely and keep working exactly as they do today. Only once that's proven does the redesigned grid go behind a reversible, sticky toggle with a handful of design-partner customers, classic view fully supported throughout. And the shift-filling feature itself gets piloted specifically with the segments that asked for it, off by default for the smaller, relationship-based teams that said plainly they didn't want it.</p>
 
         <p class="modal-section-title">Outcomes so far</p>
-        <p class="modal-text">The MVP is scoped, phased, and ready, and we're moving into pilot next. It hasn't shipped yet, so there's no usage data to report, but the signal ahead of pilot has been strong: a solid chunk of the customers we validated the problem with are actively keen to trial it once it's live, which is exactly the evidence that's now taking this from a phased spec into an actual pilot.</p>
+        <p class="modal-text">It's early for the shift-filling piece specifically, pre-pilot, so there's no usage data to report yet. But the problem is validated directly through research on both sides, the MVP is scoped, phased, and prototyped end to end, and the signal ahead of pilot has been strong: enough customer interest in trialling it that it's now moving from a phased plan into an actual pilot.</p>
         <div class="outcomes-grid">
           <div class="modal-outcome">
             <div class="modal-outcome-num">✓</div>
@@ -1355,7 +1369,7 @@
           </div>
           <div class="modal-outcome">
             <div class="modal-outcome-num">→</div>
-            <div class="modal-outcome-label">MVP scoped and phased from a single broadcast flow through to a full two-sided marketplace</div>
+            <div class="modal-outcome-label">Redesigned roster and shift-filling MVP scoped, phased, and prototyped end to end</div>
           </div>
           <div class="modal-outcome">
             <div class="modal-outcome-num">↑</div>
