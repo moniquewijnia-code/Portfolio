@@ -791,22 +791,22 @@
         </div>
       </div>
 
-      <!-- Case 7 (Mobile) -->
+      <!-- Case 7 (ReadyTech) -->
       <div class="case-card reveal" onclick="openModal('modal-7')" style="cursor:pointer;">
         <div class="case-image">
           <div class="case-image-placeholder">
-            <span class="placeholder-icon">📱</span>
+            <span class="placeholder-icon">🔄</span>
             <span class="placeholder-text">Add your mockup image here</span>
           </div>
         </div>
         <div class="case-content">
-          <p class="case-number">07 · Mobile</p>
-          <h3 class="case-title">Designing for mobile-first workflows</h3>
-          <p class="case-desc">A case study on native and responsive mobile design work: coming soon. Get in touch if you'd like to see mobile-specific work in the meantime.</p>
+          <p class="case-number">07 · ReadyTech</p>
+          <h3 class="case-title">Building a shift marketplace, from brief to pilot</h3>
+          <p class="case-desc">Redesigning how managers fill last-minute shift gaps and how frontline staff pick them up, from user research through a phased MVP now heading into pilot, across desktop and mobile.</p>
           <div class="case-meta">
-            <span class="case-tag">Mobile UX</span>
-            <span class="case-tag">iOS &amp; Android</span>
-            <span class="case-tag">Case study coming soon</span>
+            <span class="case-tag">Marketplace Design</span>
+            <span class="case-tag">Mobile &amp; Desktop</span>
+            <span class="case-tag">0 to Pilot</span>
           </div>
           <span class="case-link">Read case study <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
         </div>
@@ -1298,39 +1298,68 @@
     </div>
   </div>
 
-  <!-- Modal 7: Mobile (placeholder) -->
+  <!-- Modal 7: Shift Marketplace -->
   <div class="modal-overlay" id="modal-7" onclick="closeModalOnOverlay(event, 'modal-7')">
     <div class="modal">
       <button class="modal-close" onclick="closeModal('modal-7')">✕</button>
       <div class="modal-hero">
-        <span>📱</span>
+        <span>🔄</span>
       </div>
       <div class="modal-body">
-        <p class="modal-eyebrow">Mobile</p>
-        <h2 class="modal-title">Designing for mobile-first workflows</h2>
+        <p class="modal-eyebrow">ReadyTech</p>
+        <h2 class="modal-title">Building a shift marketplace, from brief to pilot</h2>
         <div class="modal-tags">
-          <span class="tag">Mobile UX</span>
-          <span class="tag">iOS &amp; Android</span>
-          <span class="tag">Case study coming soon</span>
+          <span class="tag">Marketplace Design</span>
+          <span class="tag">Mobile &amp; Desktop</span>
+          <span class="tag">0 to Pilot</span>
         </div>
 
-        <p class="modal-section-title">This one's on its way</p>
-        <p class="modal-text">This case study is still being written up: the mockups and details aren't live yet. If mobile experience is what brought you here, get in touch and I'm happy to walk you through the work directly.</p>
+        <p class="modal-section-title">Where this stands today</p>
+        <p class="modal-text">This one's still pre-pilot, so there's no shipped product screenshots yet, and some specifics are kept general while it's live work. What follows is the actual arc of the project: the research that shaped it, the two very different experiences it needed to become, and where it stands heading into pilot.</p>
 
-        <p class="modal-section-title">The challenge</p>
-        <p class="modal-text"><!-- ADD YOUR CONTENT HERE --></p>
+        <p class="modal-section-title">The situation</p>
+        <p class="modal-text">Filling a last-minute open shift is one of the most stressful, manual jobs a roster manager does. When someone calls in sick or demand spikes without warning, managers fall back on shadow IT: WhatsApp groups, SMS blasts, phone trees, whatever gets a warm body into the gap fastest. Once volunteers come back, the manager then has to manually cross-reference each one against timesheets and rosters just to guess whether saying yes will accidentally trigger overtime. It's high cognitive load, real financial risk, and it happens under time pressure. Meanwhile, on the other side of that same shift, frontline employees increasingly expect a mobile-first, gig-like way to pick up extra hours on their own terms, not a text message from a manager they might not see in time.</p>
 
         <p class="modal-section-title">My role</p>
-        <p class="modal-text"><!-- ADD YOUR CONTENT HERE --></p>
+        <p class="modal-text">I'm the product designer on this from brief to pilot: I led the user research that shaped the problem statement, worked with the product manager and tech lead to define the biggest issues worth solving first, designed both sides of the experience (the desktop workflow managers use to broadcast a shift, and the native mobile app employees use to claim one), mapped every notification across every fill workflow, and helped phase the MVP so we could scope something buildable instead of the whole marketplace at once.</p>
 
-        <p class="modal-section-title">The process</p>
-        <p class="modal-text"><!-- ADD YOUR CONTENT HERE --></p>
+        <p class="modal-section-title">The research</p>
+        <p class="modal-text">We started the year with research into both sides of this problem, not just the manager side that usually gets the attention. Managers and roster admins are time-poor and high-stress, anxious about blowing the labour budget but even more anxious about a shift going uncovered, so coverage wins every time it's a trade-off. Frontline employees are mobile-centric, want fair and fast access to extra hours, and are highly responsive to push notifications when the offer is clear and quick to act on. That research is where "the roster scramble" got named as the actual problem: not that managers lacked a way to broadcast a shift, but that the product gave them no faster or safer way to do it than the group chat already sitting on their phone, and zero visibility into the overtime consequences of who they picked.</p>
 
-        <p class="modal-section-title">Outcomes</p>
+        <div class="modal-image-placeholder">
+          <span class="placeholder-icon">🖥️📱</span>
+          <span class="placeholder-text">Add the manager broadcast flow (desktop) alongside the employee accept/decline flow (mobile) here</span>
+        </div>
+
+        <p class="modal-section-title">Designing two experiences at once</p>
+        <p class="modal-text">This isn't one interface, it's two, built for two completely different contexts. Managers work from the desktop roster they already live in, so the broadcast flow needed to sit naturally inside that: pick the open shift, and the system automatically filters out anyone who's ineligible against hard constraints like missing qualifications, clashing rosters, or approved leave, then ranks who's left against soft constraints managers actually weigh before offering it out, like cost and the risk of triggering immediate or cascading overtime. Employees, by contrast, needed something built for a glance and a tap: a push notification that turns into an accept or decline in as few steps as possible, because it's competing directly with the immediacy of a text message.</p>
+        <p class="modal-text" style="margin-top:12px;">For the MVP, the winning workflow is first-to-accept: whoever claims the shift first gets it, instantly. A manager-choice workflow, where employees apply and the manager picks the winner, is scoped for phase two, once managers want more control over who fills a given shift. I also designed roster-group targeting into the broadcast flow itself, so a manager filling a bar shift can send it to "Friday Night Bar Staff" instead of blasting the entire eligible list and burning trust in the notification.</p>
+
+        <p class="modal-section-title">Mapping every notification</p>
+        <p class="modal-text">A feature like this lives or dies on trust in its notifications. If an employee gets offered a shift and never hears back, they won't open the app for the next one. So alongside the interaction design, I mapped every notification across every fill workflow: assign directly, first-to-accept, and manager review, who receives each one, when, and whether it's a push or an in-app message, down to edge cases like what a late-acceptor sees versus a silent non-responder, and what happens the moment an offer expires. That map became the shared spec design and engineering both built from.</p>
+
+        <div class="modal-image-placeholder">
+          <span class="placeholder-icon">🔔</span>
+          <span class="placeholder-text">Add the notification map here, covering assign-directly, first-to-accept, and manager-review workflows</span>
+        </div>
+
+        <p class="modal-section-title">Phasing the MVP</p>
+        <p class="modal-text">Rather than trying to ship the whole marketplace in one go, we phased it deliberately. The MVP covers a manager broadcasting an open shift, the automatically filtered and ranked eligible list, first-to-accept assignment, and the employee mobile app to view, accept, or decline. Phase two layers in the manager-choice workflow. Phase three opens up roster visibility and unfilled-shift management from mobile itself, plus peer-to-peer shift swapping. Just as deliberately, we scoped out anything that turns this into general chat between staff: it's a transactional tool for filling shifts, not a social network.</p>
+
+        <p class="modal-section-title">Outcomes so far</p>
+        <p class="modal-text">The MVP is scoped, phased, and ready, and we're moving into pilot next. It hasn't shipped yet, so there's no usage data to report, but the signal ahead of pilot has been strong: a solid chunk of the customers we validated the problem with are actively keen to trial it once it's live, which is exactly the evidence that's now taking this from a phased spec into an actual pilot.</p>
         <div class="outcomes-grid">
           <div class="modal-outcome">
-            <div class="modal-outcome-num">–</div>
-            <div class="modal-outcome-label">Add your key outcome here</div>
+            <div class="modal-outcome-num">✓</div>
+            <div class="modal-outcome-label">Problem validated directly with managers and frontline employees through research</div>
+          </div>
+          <div class="modal-outcome">
+            <div class="modal-outcome-num">→</div>
+            <div class="modal-outcome-label">MVP scoped and phased from a single broadcast flow through to a full two-sided marketplace</div>
+          </div>
+          <div class="modal-outcome">
+            <div class="modal-outcome-num">↑</div>
+            <div class="modal-outcome-label">Strong pre-pilot interest from customers, now moving the feature into trial</div>
           </div>
         </div>
       </div>
