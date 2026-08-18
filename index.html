@@ -683,10 +683,7 @@
       <!-- Case 1 (ReadyTech) -->
       <div class="case-card reveal" onclick="openModal('modal-5')" style="cursor:pointer;">
         <div class="case-image">
-          <div class="case-image-placeholder">
-            <span class="placeholder-icon">🧱</span>
-            <span class="placeholder-text">Add your mockup image here</span>
-          </div>
+          <img src="ds-audit-screenshot.png" alt="ReadyTech UI audit board" />
         </div>
         <div class="case-content">
           <p class="case-number">01 — ReadyTech</p>
@@ -743,10 +740,7 @@
       <!-- Case 4 (Wolters Kluwer AU) -->
       <div class="case-card reverse reveal" onclick="openModal('modal-2')" style="cursor:pointer;">
         <div class="case-image">
-          <div class="case-image-placeholder">
-            <span class="placeholder-icon">🤖</span>
-            <span class="placeholder-text">Add your mockup image here</span>
-          </div>
+          <img src="mockup_citegenie.png" alt="CCH CiteGenie AI research assistant" />
         </div>
         <div class="case-content">
           <p class="case-number">04 — Wolters Kluwer AU</p>
@@ -764,10 +758,7 @@
       <!-- Case 5 (Wolters Kluwer Global) -->
       <div class="case-card reveal" onclick="openModal('modal-3')" style="cursor:pointer;">
         <div class="case-image">
-          <div class="case-image-placeholder">
-            <span class="placeholder-icon">🧩</span>
-            <span class="placeholder-text">Add your mockup image here</span>
-          </div>
+          <img src="mockup_design_system.png" alt="Wolters Kluwer global design system foundations" />
         </div>
         <div class="case-content">
           <p class="case-number">05 — Wolters Kluwer Global</p>
@@ -785,10 +776,7 @@
       <!-- Case 6 (Wolters Kluwer NL) -->
       <div class="case-card reverse reveal" onclick="openModal('modal-4')" style="cursor:pointer;">
         <div class="case-image">
-          <div class="case-image-placeholder">
-            <span class="placeholder-icon">📚</span>
-            <span class="placeholder-text">Add your mockup image here</span>
-          </div>
+          <img src="mockup_iknowconnect.png" alt="CCH iKnowConnect research platform" />
         </div>
         <div class="case-content">
           <p class="case-number">06 — Wolters Kluwer NL</p>
@@ -798,6 +786,27 @@
             <span class="case-tag">Research Tools</span>
             <span class="case-tag">Information Architecture</span>
             <span class="case-tag">Professional UX</span>
+          </div>
+          <span class="case-link">Read case study <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
+        </div>
+      </div>
+
+      <!-- Case 7 (Mobile) -->
+      <div class="case-card reveal" onclick="openModal('modal-7')" style="cursor:pointer;">
+        <div class="case-image">
+          <div class="case-image-placeholder">
+            <span class="placeholder-icon">📱</span>
+            <span class="placeholder-text">Add your mockup image here</span>
+          </div>
+        </div>
+        <div class="case-content">
+          <p class="case-number">07 — Mobile</p>
+          <h3 class="case-title">Designing for mobile-first workflows</h3>
+          <p class="case-desc">A case study on native and responsive mobile design work — coming soon. Get in touch if you'd like to see mobile-specific work in the meantime.</p>
+          <div class="case-meta">
+            <span class="case-tag">Mobile UX</span>
+            <span class="case-tag">iOS &amp; Android</span>
+            <span class="case-tag">Case study coming soon</span>
           </div>
           <span class="case-link">Read case study <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
         </div>
@@ -948,7 +957,7 @@
     <div class="modal">
       <button class="modal-close" onclick="closeModal('modal-2')">✕</button>
       <div class="modal-hero">
-        <span>🤖</span>
+        <img src="mockup_citegenie.png" alt="CCH CiteGenie AI research assistant" />
       </div>
       <div class="modal-body">
         <p class="modal-eyebrow">Wolters Kluwer AU</p>
@@ -959,20 +968,50 @@
           <span class="tag">Workflow UX</span>
         </div>
 
-        <p class="modal-section-title">The challenge</p>
-        <p class="modal-text"><!-- ADD YOUR CONTENT HERE --></p>
+        <p class="modal-section-title">Background</p>
+        <p class="modal-text">Every year, Wolters Kluwer runs the Global Innovation Awards — an internal program, paired with a CodeGames hackathon, that brings cross-functional teams together to pitch new ideas for improving internal processes or customer-facing experiences. This project, CCH CiteGenie, was created by the APAC tax and accounting team in the year ChatGPT went mainstream, when everyone was asking the same question: how could this technology actually improve our customers' workflow? I was brought onto the idea early for the user research and design perspective, as it moved through the Awards' staged process — each stage going deeper into the solution, its potential revenue, and the problem it solved.</p>
+
+        <p class="modal-section-title">The problem</p>
+        <p class="modal-text">We started from an assumption rather than validated fact: tax professionals conducting research were dealing with information overload, tight time constraints, and a research process that was inherently cumbersome — all while accuracy and regulatory compliance left no room for error. CiteGenie was proposed as an AI-powered research assistant to tackle these pain points directly. But an assumption isn't a business case, so before the idea could become a credible entrant into the Innovation Awards, we needed evidence.</p>
 
         <p class="modal-section-title">My role</p>
-        <p class="modal-text"><!-- ADD YOUR CONTENT HERE --></p>
+        <p class="modal-text">I led the research and design validation work that turned the idea into something the Awards judges — and the business — could actually evaluate: designing and running a fake-door experiment and an in-platform survey to test real interest, contributing to the lean canvas that framed the opportunity, and designing the interactive Figma prototype that became the reference for the dev team's working demo.</p>
+
+        <div class="modal-image-block">
+          <img src="genie01_fakedoor.png" alt="Fake door experiment for CCH CiteGenie inside CCH iKnow, with flow analytics dashboard" />
+          <p class="modal-image-caption">The fake-door experiment, launched inside CCH iKnow to gauge genuine interest in an AI research assistant — plus the flow analytics used to track completion against a benchmark.</p>
+        </div>
 
         <p class="modal-section-title">The process</p>
-        <p class="modal-text"><!-- ADD YOUR CONTENT HERE --></p>
+        <p class="modal-text">To validate demand quickly, we ran a fake-door experiment directly inside CCH iKnow, our live tax research product — an early-access landing page pitching the AI assistant, with a simple email capture as the call to action. Email CTAs like this typically convert at 2–3%; ours completed at roughly 5%, close to double the benchmark, which gave us a genuine signal rather than a hopeful one.</p>
+        <p class="modal-text" style="margin-top:12px;">Alongside that, we mapped the opportunity on a lean canvas — problem, solution, unique value proposition, market size, channels, and revenue streams — to understand the idea from every angle a judge or stakeholder would ask about.</p>
+
+        <div class="modal-image-block">
+          <img src="genie03_leancanvas.png" alt="CCH CiteGenie Lean Canvas" />
+          <p class="modal-image-caption">The CCH CiteGenie Lean Canvas — problem, solution, unique value proposition, market sizing, and revenue projections used to pressure-test the idea for the Innovation Awards pitch.</p>
+        </div>
+
+        <p class="modal-text">Given how quickly the hackathon-style Awards process moves, we couldn't wait for a fully-scoped build — so I designed a working prototype in Figma that the dev team used as a direct reference to build an actual functioning demo for the final round. Beyond the core integrated experience, we also scoped out third-party integrations — Outlook, Teams, and even competitor software — to make the workflow seamless wherever our customers already were, leaning on the strength of our tax and accounting content to justify reaching beyond our own platform.</p>
+
+        <div class="modal-image-block">
+          <img src="genie05_prototype.png" alt="Early CCH CiteGenie prototype chat screens" />
+          <p class="modal-image-caption">Early prototype explorations of the chat-based research flow, handed to the dev team as the reference for the working hackathon demo.</p>
+        </div>
 
         <p class="modal-section-title">Outcomes</p>
+        <p class="modal-text">The idea made it all the way to the final round of the Innovation Awards, ultimately placing second. While it didn't move forward as a funded initiative, the process did what good discovery is supposed to do: it got every stakeholder in the room genuinely excited about what AI could do for our customers, and opened eyes across the business to what the future of our platform and content could look like.</p>
         <div class="outcomes-grid">
           <div class="modal-outcome">
-            <div class="modal-outcome-num">—</div>
-            <div class="modal-outcome-label">Add your key outcome here</div>
+            <div class="modal-outcome-num">5%</div>
+            <div class="modal-outcome-label">Fake-door completion rate — roughly 2x the typical email CTA benchmark</div>
+          </div>
+          <div class="modal-outcome">
+            <div class="modal-outcome-num">2nd</div>
+            <div class="modal-outcome-label">Place in the Global Innovation Awards final, from concept to working demo</div>
+          </div>
+          <div class="modal-outcome">
+            <div class="modal-outcome-num">↑</div>
+            <div class="modal-outcome-label">Cross-org excitement sparked around AI's role in the product's future</div>
           </div>
         </div>
       </div>
@@ -984,7 +1023,7 @@
     <div class="modal">
       <button class="modal-close" onclick="closeModal('modal-3')">✕</button>
       <div class="modal-hero">
-        <span>🧩</span>
+        <img src="mockup_design_system.png" alt="Wolters Kluwer global design system foundations" />
       </div>
       <div class="modal-body">
         <p class="modal-eyebrow">Wolters Kluwer Global</p>
@@ -995,20 +1034,60 @@
           <span class="tag">Global Scale</span>
         </div>
 
-        <p class="modal-section-title">The challenge</p>
-        <p class="modal-text"><!-- ADD YOUR CONTENT HERE --></p>
+        <p class="modal-section-title">Background</p>
+        <p class="modal-text">Wolters Kluwer is a global leader in professional information, software, and services, operating across numerous distinct market segments with a product portfolio built up significantly through decades of acquisitions. That history left a fragmented landscape: disparate user experiences and inconsistent brand representation from one product to the next, with no shared visual language or interaction framework tying any of it together. The initiative to build the organisation's first-ever comprehensive design system set out to change that.</p>
+
+        <div class="modal-image-block">
+          <img src="ds_01.png" alt="Audit of existing Wolters Kluwer product interfaces across different products and locales" />
+          <p class="modal-image-caption">A snapshot from the early audit — the same kinds of interfaces (search, document viewers, content trees) rebuilt independently across different Wolters Kluwer products, with no shared foundation between them.</p>
+        </div>
+
+        <p class="modal-section-title">The approach</p>
+        <p class="modal-text">As a core member of the dedicated design system team, my initial focus was discovery and strategic planning — running workshops to define scope, identify key components and patterns, and work within existing brand guidelines for icon, colour, and type. We started with a thorough audit of current Wolters Kluwer applications, documenting existing patterns, components, and pages in search of both commonalities and inconsistencies.</p>
+        <p class="modal-text" style="margin-top:12px;">That audit surfaced a crucial distinction that shaped everything after it: two fundamentally different product types, "Research" and "Workflow," distinguished primarily by their navigation pattern — a horizontal, "Fixed" chrome for Research products, versus an expandable left-hand, "Fluid" chrome for Workflow products. This distinction became the backbone of the system's initial component list.</p>
+
+        <div style="display:flex; gap:16px; margin:20px 0; flex-wrap:wrap;">
+          <div style="flex:1; min-width:200px;">
+            <img src="ds_03_chromefluid.png" alt="Fluid chrome navigation pattern for Workflow products" style="width:100%; display:block; border-radius:12px; border:1px solid var(--sand);" />
+          </div>
+          <div style="flex:1; min-width:200px;">
+            <img src="ds_04_chromefixed.png" alt="Fixed chrome navigation pattern for Research products" style="width:100%; display:block; border-radius:12px; border:1px solid var(--sand);" />
+          </div>
+        </div>
+        <p class="modal-image-caption" style="margin-top:-8px;">The two foundational chrome patterns the system was built around: expandable "Fluid" navigation for Workflow products (left) and horizontal "Fixed" navigation for Research products (right).</p>
+
+        <p class="modal-text" style="margin-top:20px;">Over several months — evolving into years, since a design system is a living product, not a one-off deliverable — we designed and developed components in agile sprint cycles, shipping Version 1, then Version 2, and now progressing through Version 3. Along the way we refined our own toolchain: moving from Sketch to Figma for design, and establishing ZeroHeight for documentation in place of Storybook, with every environment linked and kept in sync.</p>
+
+        <div class="modal-image-block">
+          <img src="ds_06.png" alt="Wolters Kluwer design system Figma libraries: Components, Fundamentals, and Patterns" />
+          <p class="modal-image-caption">The design system's Figma libraries at scale today — hundreds of synced components across Fundamentals, Components, and Patterns, alongside product-specific libraries built on top of them.</p>
+        </div>
 
         <p class="modal-section-title">My role</p>
-        <p class="modal-text"><!-- ADD YOUR CONTENT HERE --></p>
-
-        <p class="modal-section-title">The process</p>
-        <p class="modal-text"><!-- ADD YOUR CONTENT HERE --></p>
+        <p class="modal-text">Building a design system is inherently a team effort, and this one was no exception — but my specific contributions included:</p>
+        <ul style="margin-top: 12px; padding-left: 20px; display: flex; flex-direction: column; gap: 10px;">
+          <li class="modal-text">Designing reusable components and writing their documentation</li>
+          <li class="modal-text">Research and analysis on patterns, pages, and components across products org-wide</li>
+          <li class="modal-text">Helping establish which components, patterns, and pages needed to be built, and in what order</li>
+          <li class="modal-text">Attending cross-functional global workshops to shape strategy, vision, and prioritisation</li>
+          <li class="modal-text">Annotating designs and running feedback loops with development and other stakeholders</li>
+          <li class="modal-text">Collaborating with other designers, product managers, technical leads, and stakeholders across the org</li>
+        </ul>
 
         <p class="modal-section-title">Outcomes</p>
+        <p class="modal-text">The design system has become an indispensable tool for both design and development — designers work directly in Figma to integrate components, while developers pull the matching React or Angular code, dramatically accelerating workflows on both sides and freeing up time for user-centric problem-solving instead of rebuilding the same patterns from scratch. Complete consistency across complex page-level patterns is still an ongoing effort — the component library solved brand and UI consistency, but applying those components into fully standardised page layouts remains a live focus for future iterations.</p>
         <div class="outcomes-grid">
           <div class="modal-outcome">
-            <div class="modal-outcome-num">—</div>
-            <div class="modal-outcome-label">Add your key outcome here</div>
+            <div class="modal-outcome-num">1st</div>
+            <div class="modal-outcome-label">Design system ever built at Wolters Kluwer, now in its 3rd major version</div>
+          </div>
+          <div class="modal-outcome">
+            <div class="modal-outcome-num">400+</div>
+            <div class="modal-outcome-label">Synced components in the core Figma component library alone</div>
+          </div>
+          <div class="modal-outcome">
+            <div class="modal-outcome-num">↑</div>
+            <div class="modal-outcome-label">Deployed across the global product portfolio, accelerating both design and dev workflows</div>
           </div>
         </div>
       </div>
@@ -1020,10 +1099,10 @@
     <div class="modal">
       <button class="modal-close" onclick="closeModal('modal-4')">✕</button>
       <div class="modal-hero">
-        <span>📚</span>
+        <img src="mockup_iknowconnect.png" alt="CCH iKnowConnect research platform" />
       </div>
       <div class="modal-body">
-        <p class="modal-eyebrow">Wolters Kluwer NL</p>
+        <p class="modal-eyebrow">Wolters Kluwer NL / AU / NZ</p>
         <h2 class="modal-title">Enabling efficient tax, accounting &amp; legal research</h2>
         <div class="modal-tags">
           <span class="tag">Research Tools</span>
@@ -1031,20 +1110,56 @@
           <span class="tag">Professional UX</span>
         </div>
 
-        <p class="modal-section-title">The challenge</p>
-        <p class="modal-text"><!-- ADD YOUR CONTENT HERE --></p>
+        <p class="modal-section-title">Background</p>
+        <p class="modal-text">IntelliConnect, our legacy legal and tax research product, served more than 50,000 users across the APAC region — loved by many of them, but also showing its age. Launched years earlier without design or user experience in mind, it had accumulated serious technical debt, and a global company directive put us on a deadline to sunset it entirely by the end of 2023.</p>
+        <p class="modal-text" style="margin-top:12px;">It wasn't the only legacy product in the mix. A separate, simpler platform called iKnow had launched in 2016 for small accounting firms (plus a New Zealand variant), and in 2019 a companion product, Pinpoint, launched for smaller legal firms. Both were loved by their target audience for their modern, fast, cross-device experience — but larger firms who tried them stayed on IntelliConnect. By 2020 we had four fragmented products in market, a small development team, a couple of product members, and a single UX designer: me. This became project "Tahi" — Māori for "one" — with one goal: sunset all four legacy platforms and replace them with a single, future-proof product that actually solved our customers' pain points.</p>
 
         <p class="modal-section-title">My role</p>
-        <p class="modal-text"><!-- ADD YOUR CONTENT HERE --></p>
+        <p class="modal-text">I owned UX end-to-end for the project: building the research plan and scripts, running and analysing customer interviews (including calls in the middle of the night to cover an 8-hour timezone gap while working remotely from the Netherlands for the APAC business), building the affinity wall and research taxonomy, designing the high-fidelity Figma prototype, and running usability testing. Around 18 months in, a junior UX designer joined to take on production design and day-to-day dev collaboration, freeing me to focus on strategy, high-level concepts, and solving problems as they surfaced during the beta program.</p>
 
-        <p class="modal-section-title">The process</p>
-        <p class="modal-text"><!-- ADD YOUR CONTENT HERE --></p>
+        <p class="modal-section-title">Contextual inquiry and research</p>
+        <p class="modal-text">First order of business: understand the actual customer pain points, not assumed ones. Early 2020 made that harder than usual — remote research became the only option — so I combined efforts with product members and our in-house editorial team to recruit and interview more than 10 customers across Australia and New Zealand, spanning IntelliConnect, iKnow, and Pinpoint users. I built the research plan and scripts, ran the interviews (delegating recruitment to our commercial managers, who held the customer relationships), and synthesised everything into a full contextual inquiry analysis.</p>
+
+        <div class="modal-image-block">
+          <img src="migrate_01.jpg" alt="Affinity wall from contextual inquiry research, Browse and Search Insights Canvas" />
+          <p class="modal-image-caption">The affinity wall built from over 10 contextual inquiry interviews across Australia and New Zealand, mapping how customers actually search and browse for content.</p>
+        </div>
+
+        <p class="modal-text">The research settled on two dominant pathways customers take to find what they need — searching directly, or browsing to it — and made clear that both were the sharpest pain points to solve first. After building the affinity wall, I ran a full-day (genuinely all-nighter, timezone-wise) workshop to "walk the wall" with the team, brainstorm design directions, and pressure-test which concepts were actually working.</p>
+
+        <p class="modal-section-title">Prototyping and usability testing</p>
+        <p class="modal-text">From there we built a clickable high-fidelity prototype in Figma and took it back to the same customers, plus new ones, through both moderated interviews and unmoderated Maze testing — comparing the new design directly against the two products it was meant to replace, iKnow and Pinpoint, across 8 core research tasks.</p>
+
+        <div class="modal-image-block">
+          <img src="migrate_03.jpg" alt="Usability testing results comparing iKnow and Pinpoint prototypes" />
+          <p class="modal-image-caption">Usability testing results across iKnow and Pinpoint testers — task completion, ease-of-use scores, and verbatim feedback that directly shaped the new information architecture.</p>
+        </div>
+
+        <p class="modal-text">In parallel, I set up a living research taxonomy in Dovetail, our research repository, tagging every insight by user role, organisation size, region, and sentiment — so any stakeholder could search across the full body of customer evidence, not just what I happened to remember. That taxonomy is still growing today, now folding in everything gathered since launch. The product manager and I also presented our discovery and design approach directly to the broader organisation and executive team.</p>
+
+        <div class="modal-image-block">
+          <img src="migrate_02.png" alt="Full information architecture sitemap for CCH iKnowConnect" />
+          <p class="modal-image-caption">The full information architecture — every legacy IntelliConnect, iKnow, Pinpoint, and NZ content path mapped and restructured into a single new platform.</p>
+        </div>
+
+        <p class="modal-section-title">A product-led transition strategy</p>
+        <p class="modal-text">The business risk wasn't just building the right product — it was moving 50,000+ users onto it without losing them, or overwhelming customer success and sales in the process. We designed a product-led transition: banners, redirection, in-product notifications, onboarding flows, tooltips, and help content, largely built and owned by the product manager, product owner, and me. We rolled it out in four phases — an invite-only Early Bird beta, a General beta open to all IntelliConnect users, automatic redirection with an optional switch-back, and finally sunsetting the legacy platforms — deliberately shipping an MVP rather than waiting for perfection, so we could gather real signal earlier.</p>
+        <p class="modal-text" style="margin-top:12px;">We hit our Early Bird launch on 23 June, with the critical MVP features in place. The feedback loop this created — real customers, in their real day-to-day workflow, giving us satisfaction scores, ratings, and direct feedback — taught us more than any research phase before it, surfacing behaviours we'd never uncovered in the contextual inquiry.</p>
 
         <p class="modal-section-title">Outcomes</p>
+        <p class="modal-text">Taking everything we'd learned across every product's strengths and weaknesses, we shipped something several customers described as "the perfect baby between iKnow and IntelliConnect." With the general beta live, redirection flows in place, and future releases already designed against a validated research base, CCH iKnowConnect replaced four fragmented legacy platforms with one — modular, reusing our global design system, and built to keep evolving without sliding back into technical debt.</p>
         <div class="outcomes-grid">
           <div class="modal-outcome">
-            <div class="modal-outcome-num">—</div>
-            <div class="modal-outcome-label">Add your key outcome here</div>
+            <div class="modal-outcome-num">50k+</div>
+            <div class="modal-outcome-label">Users across APAC transitioned off four legacy research platforms onto one</div>
+          </div>
+          <div class="modal-outcome">
+            <div class="modal-outcome-num">10+</div>
+            <div class="modal-outcome-label">Customer contextual inquiry interviews conducted remotely across AU &amp; NZ</div>
+          </div>
+          <div class="modal-outcome">
+            <div class="modal-outcome-num">4</div>
+            <div class="modal-outcome-label">Phased product-led rollout stages designed to minimise churn risk</div>
           </div>
         </div>
       </div>
@@ -1177,6 +1292,45 @@
           <div class="modal-outcome">
             <div class="modal-outcome-num">—</div>
             <div class="modal-outcome-label">Impact tracked qualitatively while ReadyTech's analytics capability matures</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 7: Mobile (placeholder) -->
+  <div class="modal-overlay" id="modal-7" onclick="closeModalOnOverlay(event, 'modal-7')">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('modal-7')">✕</button>
+      <div class="modal-hero">
+        <span>📱</span>
+      </div>
+      <div class="modal-body">
+        <p class="modal-eyebrow">Mobile</p>
+        <h2 class="modal-title">Designing for mobile-first workflows</h2>
+        <div class="modal-tags">
+          <span class="tag">Mobile UX</span>
+          <span class="tag">iOS &amp; Android</span>
+          <span class="tag">Case study coming soon</span>
+        </div>
+
+        <p class="modal-section-title">This one's on its way</p>
+        <p class="modal-text">This case study is still being written up — the mockups and details aren't live yet. If mobile experience is what brought you here, get in touch and I'm happy to walk you through the work directly.</p>
+
+        <p class="modal-section-title">The challenge</p>
+        <p class="modal-text"><!-- ADD YOUR CONTENT HERE --></p>
+
+        <p class="modal-section-title">My role</p>
+        <p class="modal-text"><!-- ADD YOUR CONTENT HERE --></p>
+
+        <p class="modal-section-title">The process</p>
+        <p class="modal-text"><!-- ADD YOUR CONTENT HERE --></p>
+
+        <p class="modal-section-title">Outcomes</p>
+        <div class="outcomes-grid">
+          <div class="modal-outcome">
+            <div class="modal-outcome-num">—</div>
+            <div class="modal-outcome-label">Add your key outcome here</div>
           </div>
         </div>
       </div>
