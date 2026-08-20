@@ -1299,6 +1299,20 @@
         </div>
         <p class="modal-image-caption">Two opportunity canvases run against tickets that already had a solution in the title. In both cases the canvas found a different, better-evidenced problem underneath, and the eventual build followed that, not the original ticket name.</p>
 
+        <p class="modal-section-title">From reframe to production</p>
+        <p class="modal-text">One of the two reframes above has already shipped. The inline exception-messaging work that came out of interrogating "Manage by Exception Timesheets" is live: instead of managers scanning every timesheet by hand, the system surfaces the reasoning behind each approval decision directly where they already work, and auto-approves the ones that don't need a human look. As of 1 July, 95 customers have it enabled, roughly 70% of evaluated timesheets are being auto-approved, and only 4.8% of those get reversed after the fact. That reversal rate is the number that actually matters here: it's an indirect but genuine signal that managers trust what the system is approving on their behalf, not just that the feature is switched on.</p>
+        <p class="modal-text" style="margin-top:12px;">This rollout has also become one of the first places the design system's updated foundational colours replaced older, ad-hoc ones that had crept into the timesheet screens with no real reason to be there, part of the same broader colour migration now under way across the rest of the platform.</p>
+
+        <div class="modal-image-block">
+          <img src="timesheet_review.png" alt="Shipped timesheet auto-approval review flow, showing reasoning behind flagged entries" />
+          <p class="modal-image-caption">The shipped review flow: shifts that match the roster auto-approve silently, the ones that don't get flagged with the specific reason why, a variance in duration, a mismatch against the roster, rather than leaving a manager to spot it by eye.</p>
+        </div>
+
+        <div class="modal-image-block">
+          <img src="timesheet_status_colours.png" alt="Timesheet status states using the design system's foundational colours" />
+          <p class="modal-image-caption">The full set of timesheet status states rebuilt on the design system's foundational colours, replacing a set of older, ad-hoc colours that had accumulated in this part of the product with no real reason behind them.</p>
+        </div>
+
         <p class="modal-section-title">Embedding it as a practice</p>
         <ul style="margin-top: 12px; padding-left: 20px; display: flex; flex-direction: column; gap: 10px;">
           <li class="modal-text"><strong style="color: var(--ink); font-weight: 500;">Discovery before commitment:</strong> a lightweight check-in on the "why" before a request enters the roadmap, rather than after.</li>
