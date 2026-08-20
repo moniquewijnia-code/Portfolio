@@ -701,10 +701,7 @@
       <!-- Case 2 (ReadyTech) -->
       <div class="case-card reverse reveal" onclick="openModal('modal-6')" style="cursor:pointer;">
         <div class="case-image">
-          <div class="case-image-placeholder">
-            <span class="placeholder-icon">🎯</span>
-            <span class="placeholder-text">Add your mockup image here</span>
-          </div>
+          <img src="problemfit_canvas.svg" alt="Opportunity canvas board" />
         </div>
         <div class="case-content">
           <p class="case-number">02 · ReadyTech</p>
@@ -1233,7 +1230,7 @@
     <div class="modal">
       <button class="modal-close" onclick="closeModal('modal-6')">✕</button>
       <div class="modal-hero">
-        <span>🎯</span>
+        <img src="problemfit_canvas.svg" alt="Opportunity canvas board" />
       </div>
       <div class="modal-body">
         <p class="modal-eyebrow">ReadyTech</p>
@@ -1251,10 +1248,21 @@
         <p class="modal-text">Most feature development so far had been reactive, driven by four familiar triggers: a customer asking directly for something, a customer threatening to churn if it wasn't delivered, a competitor already shipping the feature, or a push to "add AI" to a product area. Each of these arrived pre-solutioned, the fix already specified, the brief already written, with little room left to ask whether that fix was actually the right one.</p>
         <p class="modal-text" style="margin-top:12px;">The risk in taking requests at face value like this is a familiar one: you can ship exactly what was asked for and still not solve the underlying problem, retain the customer only until the next threat, or ship an AI feature that adds noise rather than value, while missing a simpler, better-fitting solution the original request never considered.</p>
 
-        <div class="modal-image-placeholder">
-          <span class="placeholder-icon">📝</span>
-          <span class="placeholder-text">Add an anonymised example of a pre-solutioned request (a ticket or Slack message showing the original ask)</span>
+        <div style="display:flex; flex-direction:column; gap:10px; margin:20px 0;">
+          <div style="display:flex; align-items:center; gap:14px; padding:13px 18px; background:var(--warm-white); border:1px solid var(--sand); border-radius:8px;">
+            <span style="flex-shrink:0; font-size:0.68rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--bark); background:var(--sand); padding:4px 10px; border-radius:4px;">Epic</span>
+            <span class="modal-text" style="color:var(--ink); font-weight:500;">Consolidated Activity Feed in Ready People</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:14px; padding:13px 18px; background:var(--warm-white); border:1px solid var(--sand); border-radius:8px;">
+            <span style="flex-shrink:0; font-size:0.68rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--bark); background:var(--sand); padding:4px 10px; border-radius:4px;">PRD</span>
+            <span class="modal-text" style="color:var(--ink); font-weight:500;">Shift Bidding Marketplace</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:14px; padding:13px 18px; background:var(--warm-white); border:1px solid var(--sand); border-radius:8px;">
+            <span style="flex-shrink:0; font-size:0.68rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--bark); background:var(--sand); padding:4px 10px; border-radius:4px;">PRD</span>
+            <span class="modal-text" style="color:var(--ink); font-weight:500;">Manage by Exception Timesheets</span>
+          </div>
         </div>
+        <p class="modal-image-caption">Three real epic and PRD titles, pulled straight from the backlog. Each one names its solution before a problem statement exists anywhere in the ticket.</p>
 
         <p class="modal-section-title">My role: introducing friction, deliberately</p>
         <p class="modal-text">My job wasn't to say no to feature requests. It was to slow the handoff between "request" and "build" just enough to ask what problem this was actually trying to solve, for whom, and why this particular fix was the one being proposed. That meant working directly with Product and Engineering before a request became a committed piece of work.</p>
@@ -1263,10 +1271,33 @@
         <p class="modal-text">The shift wasn't a single research project. It was introducing continuous discovery as a habit, so that interrogating a request became a normal step before committing to it, not an occasional detour. In practice, this meant talking directly to the people raising requests and the users affected by them, looking at where the request sat in their actual workflow, and identifying what was genuinely going wrong before accepting the proposed fix as the answer.</p>
         <p class="modal-text" style="margin-top:12px;">The goal wasn't to slow teams down. It was to make sure we were building the right thing before we built anything at all. In practice, this meant creating a separate artefact for the reframe rather than editing the original ask: an opportunity canvas capturing the real problem, the users affected, and the underlying need, sitting alongside the original request rather than replacing it. In several cases this surfaced a different, better-fitting solution than the one originally proposed. Just as importantly, it began shifting the working relationship with squads: the default conversation moved from "build this feature" towards "what problem are we actually solving, and is this the best way to solve it".</p>
 
-        <div class="modal-image-placeholder">
-          <span class="placeholder-icon">↺</span>
-          <span class="placeholder-text">Add the original feature-titled request document alongside the Opportunity Canvas that reframed it: two separate artefacts showing the shift from feature ask to problem understanding</span>
+        <p class="modal-section-title">Two reframes, in practice</p>
+        <p class="modal-text">Two of the three tickets above are worth walking through, because the gap between the title and what the opportunity canvas actually surfaced is the whole point.</p>
+
+        <div style="display:flex; flex-direction:column; gap:16px; margin:20px 0;">
+          <div style="border:1px solid var(--sand); border-radius:12px; overflow:hidden;">
+            <div style="padding:14px 20px; background:var(--warm-white); border-bottom:1px solid var(--sand);">
+              <span style="font-size:0.68rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--clay);">The ticket said</span>
+              <div style="font-family:var(--serif); font-style:italic; font-size:1.05rem; color:var(--ink); margin-top:4px;">"Shift Bidding Marketplace"</div>
+            </div>
+            <div style="padding:16px 20px;">
+              <span style="font-size:0.68rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--sage-dark);">The canvas found</span>
+              <p class="modal-text" style="margin-top:6px;">Underneath the feature name, the real problems were operational and financial: last-minute shift changes carried genuine compliance and budget risk, managers were burning effort just trying to remember who was even available, and the process felt opaque and unfair from the employee side. There was a real business case behind it too, deals lost to competitors who already had this capability, and retention risk with the customers who wanted it most. That reframing is why the eventual scope grew past a simple bidding board into a manager-controlled way to fill a shift with cost and compliance risk visible up front.</p>
+            </div>
+          </div>
+
+          <div style="border:1px solid var(--sand); border-radius:12px; overflow:hidden;">
+            <div style="padding:14px 20px; background:var(--warm-white); border-bottom:1px solid var(--sand);">
+              <span style="font-size:0.68rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--clay);">The ticket said</span>
+              <div style="font-family:var(--serif); font-style:italic; font-size:1.05rem; color:var(--ink); margin-top:4px;">"Manage by Exception Timesheets"</div>
+            </div>
+            <div style="padding:16px 20px;">
+              <span style="font-size:0.68rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--sage-dark);">The canvas found</span>
+              <p class="modal-text" style="margin-top:6px;">The title implied hiding approved timesheets from view. What the canvas surfaced was a trust problem: managers didn't believe an automated approval without being able to see why it happened, so they kept manually cross-referencing rosters against clock-ins for every entry, approved or not. It carried its own measurable business case too, in lost sales and retention risk tied to the same gap. That reframing shaped an MVP that surfaces the reasoning behind every approval decision inline, and a way for admins to test their own rules against real historical data before trusting the system with anything live, rather than a dashboard that just quietly hides what's already been approved.</p>
+            </div>
+          </div>
         </div>
+        <p class="modal-image-caption">Two opportunity canvases run against tickets that already had a solution in the title. In both cases the canvas found a different, better-evidenced problem underneath, and the eventual build followed that, not the original ticket name.</p>
 
         <p class="modal-section-title">Embedding it as a practice</p>
         <ul style="margin-top: 12px; padding-left: 20px; display: flex; flex-direction: column; gap: 10px;">
@@ -1276,7 +1307,7 @@
         </ul>
 
         <p class="modal-section-title">Outcomes so far</p>
-        <p class="modal-text">Without mature product analytics in place yet, the clearest evidence of impact is qualitative: requests that changed shape once the real problem surfaced, and a shift in how confidently teams can now explain why they're building something, not just what.</p>
+        <p class="modal-text">Without mature product analytics in place yet, the clearest evidence of impact is qualitative: the two reframes above, and others like them, plus a shift in how confidently teams can now explain why they're building something, not just what.</p>
         <div class="outcomes-grid">
           <div class="modal-outcome">
             <div class="modal-outcome-num">↺</div>
