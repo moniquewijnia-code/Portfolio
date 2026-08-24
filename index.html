@@ -715,6 +715,7 @@
             <span class="case-tag">Design Systems Strategy</span>
             <span class="case-tag">UI Audit</span>
             <span class="case-tag">0 to 1</span>
+            <span class="case-tag">AI-Assisted</span>
           </div>
           <span class="case-link">Read case study <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
         </div>
@@ -1198,6 +1199,7 @@
           <span class="tag">UI Audit</span>
           <span class="tag">0 to 1</span>
           <span class="tag">Cross-functional Buy-in</span>
+          <span class="tag">AI-Assisted</span>
         </div>
 
         <p class="modal-section-title">Where this stands today</p>
@@ -1217,6 +1219,11 @@
         <p class="modal-section-title">The approach: an audit, not a component library</p>
         <p class="modal-text">Rather than jumping straight into building components speculatively, I audited every core UI pattern across ReadyTech's three products (buttons, navigation panels, headers, breadcrumbs, inputs, tables, modals, and more), cataloguing every variant in use, where it lived, and how consistent it was.</p>
         <p class="modal-text" style="margin-top:12px;">The findings were sharpest in the parts of the product people touch constantly. Buttons had different colours, hover effects, sizes and fonts depending on which product you were in. Navigation panels varied in font, sizing, colour and even positioning from one product to the next: the single most-used element on every page, and the least consistent. Headers were inconsistent across all three products, down to literally different heights (20px in one product, 44px in another, 56px in the third), undermining a consistent brand and entry point across the platform. Tables were the closest thing to a bright spot: internally consistent within Recruitment, but inconsistent within RWF and entirely absent from Ready Talent.</p>
+
+        <div class="modal-image-block">
+          <img src="buttonszoomed.png" alt="Close-up of every button variant found across products during the audit" />
+          <p class="modal-image-caption">A closer look at just the buttons: the same action, delete, confirm, export, print, styled with a different colour, shape, or icon treatment depending on which screen it happened to get built in.</p>
+        </div>
         <p class="modal-text" style="margin-top:12px;">Each pattern was scored for severity and frequency: how disruptive the inconsistency was, and how often users would run into it. Buttons, navigation, and headers scored highest on both counts: they're not just inconsistent, they're inconsistent in the places users see and interact with the most. That combination is what turned "we should tidy up the UI" into a concrete, evidence-backed case for a design system.</p>
         <p class="modal-text" style="margin-top:12px;">This reframed the whole conversation. It's not about which component is quickest or easiest to build, especially now that AI can generate components fast once a decision is made. It's about where inconsistency is doing the most damage to the user's experience, weighed against the engineering effort already being burned maintaining that inconsistency by hand. That's the lens the strategy is built on.</p>
 
@@ -1228,12 +1235,31 @@
           <li class="modal-text"><strong style="color: var(--ink); font-weight: 500;">Measurement, eventually:</strong> ReadyTech's product analytics maturity is still developing; once it's in place, tracking adoption and time saved becomes possible in a way it isn't yet.</li>
         </ul>
 
+        <p class="modal-section-title">Turning the strategy into a plan</p>
+        <p class="modal-text">The audit said what to fix first. The next step was saying when. The plan starts with a fast foundations sprint, corrected colours, a real type scale, documented naming rules, signed off in week one, then ships the single biggest structural gap, a shared header and app-bar, in week two, before moving into core components in the audit's own priority order. Adoption is phased the same deliberate way: Ready Workforce first, since it's the fastest and lowest-risk win, Talent later once that's proven out, Recruitment much later since it runs on an entirely different stack. Some calls are left open on purpose rather than forced, one unified navigation pattern across all three products is deferred until there's enough usage data to make a real decision instead of a guess.</p>
+
+        <div class="modal-image-block">
+          <img src="figmaslide02.png" alt="Setgo design system rollout roadmap: foundations sprint, core components, phased adoption, and named risks" />
+          <p class="modal-image-caption">The rollout plan, including the risks it's carrying openly: the foundations file covers tokens and one component so far, not the whole library yet, and fast prototyping can still mean solving the wrong problem if nobody checks.</p>
+        </div>
+
+        <p class="modal-text" style="margin-top:12px;">Turning that plan into build-ready specs is happening with AI in the loop. Claude Design audits the real component repository and drafts proposed specs for what's missing, checked against the system's actual token names and prop conventions rather than invented from a blank page. It's already earning its keep: one proposed header failed a live contrast-ratio check against the accessibility threshold, caught automatically rather than found later in QA, and every call that's still unresolved gets a name and a status badge in an open decision register instead of being quietly guessed at.</p>
+
+        <div class="modal-image-block">
+          <img src="repo01.png" alt="AI-drafted component spec for sg-header, cross-checked against real design tokens, flagging a live accessibility contrast failure" />
+          <p class="modal-image-caption">A proposed header component, specified against real tokens, with an unresolved accessibility issue flagged automatically rather than waved through.</p>
+        </div>
+
         <p class="modal-section-title">Outcomes so far</p>
-        <p class="modal-text">It's still early. The honest measure of success right now isn't a metric. It's that ReadyTech has, for the first time, a documented, evidence-based view of exactly where inconsistency is hurting users most, and a clear strategy for what to fix first and why.</p>
+        <p class="modal-text">Nothing here has shipped yet, that's still the honest answer. But ReadyTech now has more than an audit: a phased plan for what gets built when, and an AI-assisted process already turning that plan into checked, build-ready specs rather than another slow manual pass.</p>
         <div class="outcomes-grid">
           <div class="modal-outcome">
             <div class="modal-outcome-num">1st</div>
             <div class="modal-outcome-label">Official Design System strategy established at ReadyTech, from scratch</div>
+          </div>
+          <div class="modal-outcome">
+            <div class="modal-outcome-num">8</div>
+            <div class="modal-outcome-label">New components specified for v1, checked against the system's real tokens</div>
           </div>
           <div class="modal-outcome">
             <div class="modal-outcome-num">✓</div>
