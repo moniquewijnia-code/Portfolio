@@ -904,31 +904,76 @@
         <p class="modal-text">Sole designer on the project, working in close partnership with the VP of UX. I owned the full scope, from initial product audit and user research synthesis through to journey mapping, concept design, and a fully interactive Figma prototype. I presented the final vision directly to the product and strategy leadership team to secure organisational buy-in.</p>
 
         <p class="modal-section-title">Background</p>
-        <p class="modal-text">CCH iFirm is a professional accounting platform used daily by tax and accounting professionals across Australia. Despite its critical role in their work, the product had accumulated years of technical and design debt: its interface had barely evolved while user expectations and workflow complexity had grown significantly. A design system refresh was underway, but the deeper problem was structural: the product wasn't built around how accountants actually work.</p>
+        <p class="modal-text">CCH iFirm is a professional accounting platform used daily by tax and accounting professionals across Australia. Despite its critical role in their work, the product had accumulated years of technical and design debt: its interface had barely evolved while user expectations and workflow complexity had grown significantly. A design system refresh was underway, but the deeper problem was structural: the product wasn't built around how accountants actually work. I started by digging into the current state directly, grabbing screenshots and documenting every frustration, inconsistency, and roadblock I could find, before teaming up with one of our UX tax and accounting leaders to shape a fresh vision for the product.</p>
+
+        <div class="modal-image-block">
+          <img src="ifirm04_old.png" alt="Grid of CCH iFirm's existing screens, showing an inconsistent UI and a live error message on the dashboard" />
+          <p class="modal-image-caption">The starting point: real screens from the existing product, dashboard, jobs, contacts, ledgers, captured as they actually were, including a live error message sitting on the dashboard itself.</p>
+        </div>
 
         <p class="modal-section-title">Problem</p>
         <p class="modal-text">Accountants are under constant time pressure, yet the software was actively slowing them down. Rather than enabling efficient, proactive work, it forced users into reactive, manual patterns:</p>
         <ul style="margin-top: 12px; padding-left: 20px; display: flex; flex-direction: column; gap: 10px;">
+          <li class="modal-text"><strong style="color: var(--ink); font-weight: 500;">Fragmented support:</strong> A maze of old, disconnected help centres and no clear in-product onboarding, leaving users to fend for themselves.</li>
           <li class="modal-text"><strong style="color: var(--ink); font-weight: 500;">Constant context switching:</strong> Simple tasks required jumping between multiple tools and manually copying and pasting data: work the software should have been doing automatically.</li>
           <li class="modal-text"><strong style="color: var(--ink); font-weight: 500;">Reactive rather than proactive:</strong> The product gave users no foresight into their workload. Accountants were always catching up, never ahead.</li>
-          <li class="modal-text"><strong style="color: var(--ink); font-weight: 500;">No feedback loop:</strong> There was no mechanism to capture, analyse, or act on user pain points, making it impossible to prioritise improvements or build a coherent roadmap.</li>
-          <li class="modal-text"><strong style="color: var(--ink); font-weight: 500;">Fragmented strategy:</strong> Multiple regional product instances meant there was no shared vision for where the product was going, leaving the team unable to align on a path forward.</li>
+          <li class="modal-text"><strong style="color: var(--ink); font-weight: 500;">The feedback vacuum:</strong> No system for capturing, analysing, or acting on user feedback. No follow-up steps when issues were raised, and no roadmap shaped by what customers were actually saying, understanding the true scale of the product's problems felt like a shot in the dark.</li>
+          <li class="modal-text"><strong style="color: var(--ink); font-weight: 500;">Strategic disconnect:</strong> Multiple regional product instances meant there was no shared vision for where the product was going, leaving the team unable to align on a path forward.</li>
         </ul>
         <p class="modal-text" style="margin-top:12px;">This combination of surface-level usability issues and deeper structural problems created a rare opportunity: rather than patching the existing product, we had the chance to step back and reimagine it from the ground up.</p>
 
+        <div class="modal-image-block">
+          <img src="ifirm02_visionaudit.png" alt="Vision statement comparison across competitors and Wolters Kluwer, with open questions about CCH iFirm's own direction" />
+          <p class="modal-image-caption">Part of surfacing the strategic disconnect: vision statements across competitors and Wolters Kluwer's own products, next to the open questions nobody had answered yet for this one, what do we want to achieve, and what's the core experience.</p>
+        </div>
+
         <p class="modal-section-title">Process</p>
         <p class="modal-text">I began with a thorough audit of the existing product, systematically documenting inconsistencies, friction points, and usability failures. This gave us a clear-eyed view of the current state before any design work began.</p>
-        <p class="modal-text" style="margin-top: 12px;">The most critical insight from this audit was that the product's structure didn't reflect how accountants actually work. Before designing anything, we needed to map their real workflow. Over several weeks in Miro, I worked closely with the VP of UX to build a comprehensive, highly detailed journey map covering every step an accountant takes from day to day. This became the single most important artefact of the project: the foundation every subsequent design decision was built on.</p>
-        <p class="modal-text" style="margin-top: 12px;">With the journey map established, I moved into defining the navigational framework, ensuring the product's structure mirrored the natural flow of an accountant's work rather than forcing them to adapt to the software. I explored multiple structural approaches, conducted desk research across professional SaaS products, and iterated in Figma using our existing design system before making the deliberate decision to push beyond it and define a future-state vision for the product and its design language.</p>
+
+        <div class="modal-image-block">
+          <img src="ifirm03_before.png" alt="List of specific usability issues found during the high-level product review" />
+          <p class="modal-image-caption">A snapshot from that review: confusing navigation, no breadcrumbs, inconsistent buttons, no consistent page layout, not responsive at all. Specific, not vague.</p>
+        </div>
+
+        <p class="modal-text">With that review done, the focus shifted from surface-level UI issues to the real question underneath: how could accountants use this product seamlessly, without the constant frustration of disjointed software? The most critical insight was that the product's structure didn't reflect how accountants actually work, so before designing anything, we needed to map their real workflow, drawing on years of accumulated user research into what accountants actually do day to day. Over several weeks in Miro, I worked closely with the VP of UX to build a comprehensive, highly detailed journey map covering every step an accountant takes from day to day. This became the single most important artefact of the project: the foundation every subsequent design decision was built on.</p>
+
+        <div class="modal-image-block">
+          <img src="ifirm05_journeymap.png" alt="Detailed Miro journey map of an accountant's daily workflow, from firm management through client setup to gathering and ingesting data" />
+          <p class="modal-image-caption">A slice of the journey map: every trigger, task, and system an accountant touches on a given day, mapped stage by stage rather than assumed.</p>
+        </div>
+
+        <p class="modal-text">With the journey map established, I moved into defining the navigational framework, ensuring the product's structure mirrored the natural flow of an accountant's work rather than forcing them to adapt to the software. I explored multiple structural approaches, conducted desk research across professional SaaS products, and iterated in Figma using our existing design system before making the deliberate decision to push beyond it and define a future-state vision for the product and its design language.</p>
 
         <p class="modal-section-title">Solution</p>
-        <p class="modal-text">The final deliverable was a fully interactive Figma prototype representing a complete reimagining of CCH iFirm, built around the accountant's natural workflow rather than legacy product structure. It covered:</p>
-        <ul style="margin-top: 12px; padding-left: 20px; display: flex; flex-direction: column; gap: 10px;">
-          <li class="modal-text"><strong style="color: var(--ink); font-weight: 500;">A proactive navigation framework</strong> structured around the steps accountants actually take, surfacing what needs attention rather than waiting for users to go looking for it</li>
-          <li class="modal-text"><strong style="color: var(--ink); font-weight: 500;">Automated workflow patterns</strong> that eliminated the manual, repetitive tasks users were doing themselves: copy-pasting, tool switching, status checking</li>
-          <li class="modal-text"><strong style="color: var(--ink); font-weight: 500;">Logic flows for all core patterns</strong>: onboarding, account management, help, e-commerce, and trial-to-subscribe, each grounded in the journey map</li>
-          <li class="modal-text"><strong style="color: var(--ink); font-weight: 500;">A future-state design vision</strong> that went beyond the existing component library to establish what the product and its design system could become</li>
-        </ul>
+        <p class="modal-text">Leveraging the customer insight and the journey map together, the next step was defining what this product could actually become.</p>
+
+        <div class="modal-image-block">
+          <img src="ifirm14_desiredexperience.jpg" alt="Desired experience concept: one unified workflow connecting clients, tasks, billing, business metrics, and advice" />
+          <p class="modal-image-caption">The desired experience: one efficient workflow instead of several disconnected ones, clients, tasks, billing, advice, and business metrics all reachable from the same place.</p>
+        </div>
+
+        <p class="modal-text" style="margin-top:12px;"><strong style="color: var(--ink); font-weight: 500;">Establishing the navigational framework.</strong> The first step was outlining the product's fundamental navigational structure, then translating that thinking into a first Figma prototype built on the existing design system and brand guidelines. Alongside it, I ran desk research across other dashboards, products, and navigational frameworks, looking for patterns worth borrowing rather than reinventing everything from a blank page.</p>
+
+        <div class="modal-image-block">
+          <img src="ifirm08_competitors.png" alt="Desk research collage of competitor and adjacent product dashboards, including QuickBooks, Xero, and MYOB" />
+          <p class="modal-image-caption">Desk research across direct competitors and adjacent SaaS products, gathering inspiration and identifying what was actually worth adopting.</p>
+        </div>
+
+        <p class="modal-text" style="margin-top:12px;"><strong style="color: var(--ink); font-weight: 500;">Pushing past the existing design system.</strong> The first iteration of the navigational framework used our current design system components as they were. It was through further brainstorming on that iteration that we made the pivotal call: stop designing within the existing component library's limits, and define a future-state vision for both the product and the design system underneath it.</p>
+
+        <div class="modal-image-block">
+          <img src="ifirm07_navframework.jpg" alt="Navigational framework wireframe version 4, showing a common header, primary menu, and main work area" />
+          <p class="modal-image-caption">Navigational framework v4: a common header and primary menu structure meant to hold across every module, not redrawn per screen.</p>
+        </div>
+
+        <p class="modal-text" style="margin-top:12px;"><strong style="color: var(--ink); font-weight: 500;">Logic flows for every pattern.</strong> With a structure in place, the next phase was building detailed logic flows for the core product and every essential pattern around it: account management, settings, new user onboarding, product access, e-commerce, trial-to-subscribe conversions, and help. Each flow was paired with conceptual designs that made the user journey behind it visible, not just the underlying logic.</p>
+
+        <div class="modal-image-block">
+          <img src="ifirm13_logicflows.png" alt="Comprehensive logic flow covering login, dashboard, account, product and support, and business performance and metrics" />
+          <p class="modal-image-caption">One continuous logic flow from login through to business performance and metrics, built pattern by pattern rather than screen by screen.</p>
+        </div>
+
+        <p class="modal-text" style="margin-top:12px;"><strong style="color: var(--ink); font-weight: 500;">From concept to product vision.</strong> To bring it together and make the case to leadership, I built a fully interactive Figma prototype: the complete navigational framework and the accountant's journey through it, with every core pattern and a full basic user flow clickable end to end. The presentation wasn't just a demo, it was there to show how UX could visualise and directly drive product strategy, not just execute on it after the fact.</p>
 
         <div class="modal-image-block">
           <img src="ifirm11_dashboard_annotated.png" alt="Annotated CCH iFirm dashboard concept with design rationale" />
