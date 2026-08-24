@@ -1445,11 +1445,15 @@
     // Modal
     function openModal(id) {
       document.getElementById(id).classList.add('open');
+      document.documentElement.style.overflow = 'hidden';
       document.body.style.overflow = 'hidden';
     }
     function closeModal(id) {
       document.getElementById(id).classList.remove('open');
-      document.body.style.overflow = '';
+      if (!document.querySelector('.modal-overlay.open')) {
+        document.documentElement.style.overflow = '';
+        document.body.style.overflow = '';
+      }
     }
     function closeModalOnOverlay(e, id) {
       if (e.target === document.getElementById(id)) closeModal(id);
